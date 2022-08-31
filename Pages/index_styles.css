@@ -29,3 +29,15 @@
     monospace; 
     */
 }
+
+#about-me {
+    padding-top: 1000px;
+    padding-bottom: 1000px;
+    padding-left: 800px;
+    padding-right: 800px;
+    color: darkcyan;
+    font-family:monospace; 
+    /* cursive; comic sans. fantasy; times new roman
+    monospace; 
+    */
+}
