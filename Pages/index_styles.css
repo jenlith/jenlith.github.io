@@ -1,0 +1,11 @@
+.body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: darkcyan;
+    font-family:monospace; 
+    /* cursive; comic sans. fantasy; times new roman
+    monospace; 
+    */
+}
