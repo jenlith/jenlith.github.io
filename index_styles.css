@@ -10,13 +10,13 @@
  * 
  * 
  * 
- * 
- * 
- * 
- * 
- * 
- * 
  */
+
+/*
+cursive; comic sans. 
+fantasy; times new roman
+monospace; 
+*/
 
 body {
     padding-top: 100px;
@@ -25,16 +25,11 @@ body {
     padding-right: 80px;
     color: purple;
     font-family: monospace;
-    /* cursive; comic sans. fantasy; times new roman
-    monospace; 
-    */
 }
 
-#full-body {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
+#about-me {
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: darkcyan;
     font-family: monospace;
     /* cursive; comic sans. fantasy; times new roman
@@ -42,24 +37,10 @@ body {
     */
 }
 
-#about-me {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: darkcyan;
-    font-family: cursive;
-    /* cursive; comic sans. fantasy; times new roman
-    monospace; 
-    */
-}
-
 #rpdu {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: darkcyan;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: darkgoldenrod;
     font-family: cursive;
     /* cursive; comic sans. fantasy; times new roman
 monospace; 
