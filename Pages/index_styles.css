@@ -18,6 +18,18 @@
  * 
  */
 
+body {
+    padding-top: 1000px;
+    padding-bottom: 1000px;
+    padding-left: 800px;
+    padding-right: 800px;
+    color: purple;
+    font-family:monospace; 
+    /* cursive; comic sans. fantasy; times new roman
+    monospace; 
+    */
+}
+
 #full-body {
     padding-top: 1000px;
     padding-bottom: 1000px;
