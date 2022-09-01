@@ -15,7 +15,7 @@
 /*
 cursive; comic sans. 
 fantasy; times new roman
-monospace; 
+monospace; nice boxy font
 */
 
 body {
@@ -24,25 +24,17 @@ body {
     padding-left: 80px;
     padding-right: 80px;
     color: purple;
-    font-family: monospace;
+    /*font-family: monospace;*/
 }
 
 #about-me {
     padding-top: 10px;
     padding-bottom: 10px;
     color: darkcyan;
-    font-family: monospace;
-    /* cursive; comic sans. fantasy; times new roman
-    monospace; 
-    */
 }
 
 #rpdu {
     padding-top: 10px;
     padding-bottom: 10px;
     color: darkgoldenrod;
-    font-family: cursive;
-    /* cursive; comic sans. fantasy; times new roman
-monospace; 
-*/
 }
