@@ -26,7 +26,7 @@ body {
     padding-bottom: 100px;
     padding-left: 80px;
     padding-right: 80px;
-    background-color: purple;
+    background-color: darkcyan;
     font-family:'Times New Roman';
     /*font-family: monospace;*/
 }
@@ -34,11 +34,11 @@ body {
 #about-me {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: darkcyan;
+    color: rgb(247, 134, 247);
 }
 
 #rpdu {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: darkgoldenrod;
+    color: goldenrod;
 }
