@@ -1,22 +1,5 @@
-/* All IDs
- * about-me
- * current-status
- * name
- * self-desc
- * rpdu
- * posn-title
- * posn-body
- * goals
- * 
- * 
- * 
- */
+/* Copied from index_styles.css regularly*/
 
-/*
-cursive; comic sans. 
-fantasy; times new roman
-monospace; nice boxy font
-*/
 html {
     background-color: black;
 }
@@ -48,7 +31,7 @@ a:hover {
     color: aliceblue;
 }
 a:visited {
-    color: cadetblue;
+    color: rgb(157, 245, 248);
 }
 a:active {
     color: bisque;

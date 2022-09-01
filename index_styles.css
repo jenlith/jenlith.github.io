@@ -31,8 +31,9 @@ body {
     /*font-family: monospace;*/
 }
 
-p {
+a, p {
     color: rgb(247, 134, 247);
+    font-size: 18px;
 }
 
 #about-me, #rpdu {
