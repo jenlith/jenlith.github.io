@@ -19,37 +19,49 @@
  */
 
 body {
-    padding-top: 1000px;
-    padding-bottom: 1000px;
-    padding-left: 800px;
-    padding-right: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     color: purple;
-    font-family:monospace; 
+    font-family: monospace;
     /* cursive; comic sans. fantasy; times new roman
     monospace; 
     */
 }
 
 #full-body {
-    padding-top: 1000px;
-    padding-bottom: 1000px;
-    padding-left: 800px;
-    padding-right: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     color: darkcyan;
-    font-family:monospace; 
+    font-family: monospace;
     /* cursive; comic sans. fantasy; times new roman
     monospace; 
     */
 }
 
 #about-me {
-    padding-top: 1000px;
-    padding-bottom: 1000px;
-    padding-left: 800px;
-    padding-right: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     color: darkcyan;
-    font-family:cursive; 
+    font-family: cursive;
     /* cursive; comic sans. fantasy; times new roman
     monospace; 
     */
+}
+
+#rpdu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: darkcyan;
+    font-family: cursive;
+    /* cursive; comic sans. fantasy; times new roman
+monospace; 
+*/
 }
