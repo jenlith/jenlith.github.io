@@ -17,6 +17,9 @@ cursive; comic sans.
 fantasy; times new roman
 monospace; nice boxy font
 */
+html {
+    background-color: black;
+}
 
 body {
     padding-top: 50px;
