@@ -19,11 +19,11 @@ monospace; nice boxy font
 */
 
 body {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     padding-left: 80px;
     padding-right: 80px;
-    color: purple;
+    background-color: purple;
     font-family:'Times New Roman';
     /*font-family: monospace;*/
 }
