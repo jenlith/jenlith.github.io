@@ -1,5 +1,24 @@
 /* Copied from index_styles.css regularly*/
 
+/* All IDs
+ * about-me
+ * current-status
+ * name
+ * self-desc
+ * rpdu
+ * posn-title
+ * posn-body
+ * goals
+ * 
+ * 
+ * 
+ */
+
+/*
+cursive; comic sans. 
+fantasy; times new roman
+monospace; nice boxy font
+*/
 html {
     background-color: black;
 }
@@ -14,14 +33,20 @@ body {
     /*font-family: monospace;*/
 }
 
-p {
+/* Standard Items */
+a, p, ul, li {
     color: rgb(247, 134, 247);
+    font-size: 16pt;
+}
+
+/* Specific Edits */
+#delete {
+    font-size: 20pt;
 }
 
 #about-me, #rpdu {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: rgb(247, 134, 247);
+    padding-top: 16pt;
+    /*color: rgb(247, 134, 247);*/
 }
 
 a:link {
@@ -31,7 +56,7 @@ a:hover {
     color: aliceblue;
 }
 a:visited {
-    color: rgb(157, 245, 248);
+    color: cadetblue;
 }
 a:active {
     color: bisque;
