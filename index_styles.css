@@ -32,8 +32,9 @@ body {
 }
 
 /* Standard Items */
-a, p, ul, li {
-    color: rgb(247, 134, 247);
+a, p, ul, li, h1, h2, h3 {
+    /*color: rgb(247, 134, 247); lighter*/
+    color: rgb(194, 97, 194);
     font-size: 16pt;
 }
 
@@ -49,6 +50,26 @@ a, p, ul, li {
 
 a:link {
     color:aqua;
+    color:blue;
+    color:blueviolet;
+    color:brown;
+    color:darkblue;
+    color:darkgreen;
+    color:darkmagenta;
+    color:darkviolet;
+    color:deeppink;
+    color:forestgreen;
+    color:fuchsia;
+    color:gold;
+    color:goldenrod;
+    color:hotpink;
+    color:indigo;
+    color:limegreen;
+    color:maroon;
+    color:mediumblue;
+    color:mediumvioletred;
+    color:midnightblue;
+    color:purple;
 }
 a:hover {
     color: aliceblue;
