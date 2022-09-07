@@ -39,7 +39,8 @@ body {
 /* Standard Items */
 a, p, ul, li, h1, h2, h3 {
     /*color: rgb(247, 134, 247); lighter*/
-    color: rgb(194, 97, 194);
+    /*color: rgb(194, 97, 194);*/
+    color:gold;
     font-size: 16pt;
 }
 
@@ -55,6 +56,7 @@ a, p, ul, li, h1, h2, h3 {
 
 a:link {
     color:aqua;
+    /*color:aqua;
     color:blue;
     color:blueviolet;
     color:brown;
@@ -74,7 +76,7 @@ a:link {
     color:mediumblue;
     color:mediumvioletred;
     color:midnightblue;
-    color:purple;
+    color:purple;*/
 }
 a:hover {
     color: aliceblue;
