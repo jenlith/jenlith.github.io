@@ -26,7 +26,8 @@ body {
     padding-bottom: 100px;
     padding-left: 80px;
     padding-right: 80px;
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
+    background-color: rgb(4, 102, 102);
     font-family:monospace;
     /*font-family: monospace;*/
 }
