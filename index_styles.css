@@ -1,25 +1,6 @@
-/* All IDs
- * about-me
- * current-status
- * name
- * self-desc
- * rpdu
- * posn-title
- * posn-body
- * goals
- * 
- * 
- * 
- */
-
-/*
-cursive; comic sans. 
-fantasy; times new roman
-monospace; nice boxy font
-*/
-html {
+/*html {
     background-color: black;
-}
+}*/
 
 body {
     padding-top: 50px;
