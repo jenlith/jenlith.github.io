@@ -14,12 +14,16 @@ body {
 /* Standard Items */
 a,p,ul,li,h1,h2,h3 {
     color: gold;
-    font-size: 16pt;
+    font-size: 20pt;
 }
 
 /* Specific Edits */
+h1 {
+    font-size: 28pt;
+}
+
 h2 {
-    font-size: 20pt;
+    font-size: 24pt;
 }
 
 /*#about-me, #rpdu {
