@@ -18,6 +18,11 @@ h1,h2,h3,a,p,ul,li,text {
     font-size: 20pt;
 }
 
+table,tr,th,td {
+    color: gold;
+    font-size: 20pt;
+}
+
 /* Specific Edits */
 h1 {
     font-size: 28pt;
