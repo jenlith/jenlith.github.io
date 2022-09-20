@@ -40,6 +40,8 @@ h2 {
     color: rgb(247, 134, 247);
 }*/
 
+/* Link Colours */
+
 a:link {
     color: aqua;
 }
@@ -54,6 +56,12 @@ a:visited {
 
 a:active {
     color: bisque;
+}
+
+/* Table */
+.table-bordered {
+    border-color: limegreen;
+    border-width: 2px;
 }
 
 /*background-color: darkcyan;*/
