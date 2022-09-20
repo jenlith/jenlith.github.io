@@ -9,12 +9,21 @@ body {
     padding-right: 80px;
     background-color: rgb(5, 73, 73);
     font-family: monospace;
+    line-height: 1.6;
 }
 
 /* Standard Items */
-a,p,ul,li,h1,h2,h3 {
+h1,h2,h3,a,p,ul,li,text {
     color: gold;
     font-size: 20pt;
+}
+
+table,tr,th,td {
+    color: gold;
+    font-size: 20pt;
+}
+th,td {
+    max-width: 30%;
 }
 
 /* Specific Edits */
