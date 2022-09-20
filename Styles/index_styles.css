@@ -13,7 +13,7 @@ body {
 }
 
 /* Standard Items */
-a,p,ul,li,h1,h2,h3 {
+h1,h2,h3,a,p,ul,li,text {
     color: gold;
     font-size: 20pt;
 }
