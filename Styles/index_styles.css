@@ -18,11 +18,14 @@ h1,h2,h3,a,p,ul,li,text {
     font-size: 20pt;
 }
 
-table,tr,th,td {
+table,tr {
     color: gold;
     font-size: 20pt;
+    width: auto;
 }
 th,td {
+    color: gold;
+    font-size: 20pt;
     max-width: 30%;
 }
 
