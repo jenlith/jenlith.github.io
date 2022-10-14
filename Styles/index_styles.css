@@ -14,9 +14,9 @@ body {
 
 .nav {
     display: block;
-    align-items: center;
-    text-align: center;
+    font-size: 14pt;
     border-color: goldenrod;
+    border-width: 3px;
 }
 
 /* Standard Items */
