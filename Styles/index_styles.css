@@ -12,6 +12,13 @@ body {
     line-height: 1.6;
 }
 
+.nav {
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-color: goldenrod;
+}
+
 /* Standard Items */
 h1,h2,h3,a,p,ul,li,text {
     color: gold;
