@@ -56,8 +56,9 @@ a:link {
     color: aqua;
 }
 
-a:hover {
+a:hover, a:visited:hover {
     color: aliceblue;
+    /*create border?*/
 }
 
 a:visited {
