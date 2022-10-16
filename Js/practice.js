@@ -7,10 +7,7 @@ function btnFunc() {
 }
 
 function aJQuery () {
-    //test3
-    alert("???");
-    $('#test3').load('navbar.html');
-    $('#test4').text("Hi");
-    //$('#c1').text("Darth Vader");
-    alert(":(");
+    //$('#test3').load('navbar.html'); //not yet working
+    $('#test4').text("<p>Hello World</p>");
+    $('#navbar').load('navbar.html'); //not yet working
 }
