@@ -10,20 +10,7 @@
         <link rel="stylesheet" href="/Styles/index_styles.css">
     </head>
 
-    <script type="text/javascript">
-        function namedFunc(words) {
-            if (words == null) {
-                return "it's my named function :)";
-            } else {
-                return "you told my named function: " + words;
-            }
-        }
-
-        function btnFunc() {
-            alert("hi");
-        }
-    </script>
-    <script type = "text/javascript" src="/Js/loadShared.js"></script> 
+    <script type = "text/javascript" src="/Js/practice.js"></script> 
 
     <body id="header_body">
         <div id="about_me">
@@ -103,13 +90,8 @@
         </div>
 
         <div>
-            <p onload="namedFunc()"></p>
-            <p onload="namedFunc('test')"></p>
-            <button onclick="btnFunc()" value="Display"></button>
-            <p onload="() => {
-                return 'this is an anonymous js function';
-            }"></p>
-            <p onload="helloWorld()"></p>
+            <button onclick="btnFunc()" value="Display" id="test3">btnFunc</button>
+            <p onload="helloWorld()" value="Display" id="test4"></p>
         </div>
 
     </body>
