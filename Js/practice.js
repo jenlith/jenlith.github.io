@@ -8,6 +8,7 @@ function btnFunc() {
 
 function aJQuery () {
     //test3
+    alert("???");
     $('#test3').load('navbar.html');
     $('#test4').text("Hi");
     //$('#c1').text("Darth Vader");
