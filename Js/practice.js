@@ -1,13 +1,8 @@
-function firstTry() {
-    return "This is javascript from a js file";
-}
-
 function btnFunc() {
     alert("hi");
 }
 
 function aJQuery () {
-    //$('#test3').load('navbar.html'); //not yet working
-    $('#test4').text("<p>Hello World</p>");
+    $('#display_aJQuery').text("<p>Hello World</p>"); //prints out the whole thing, doesn't html format
     $('#navbar').load('navbar.html'); //not yet working
 }
