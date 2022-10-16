@@ -9,5 +9,6 @@ function btnFunc() {
 function aJQuery () {
     //test3
     $('#test3').load('navbar.html');
-    $('#test4').load('navbar.html');
+    $('#test4').text("Hi");
+    //$('#c1').text("Darth Vader");
 }
