@@ -3,10 +3,12 @@
 }*/
 
 body {
+    max-width: 1000px;
+    margin: auto;
     padding-top: 50px;
     padding-bottom: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
     background-color: rgb(5, 73, 73);
     font-family: monospace;
     line-height: 1.6;
