@@ -47,15 +47,15 @@ td {
 }
 
 /* Specific Edits */
-h1 {
+h1, #name_and_title {
     font-size: 28pt;
 }
 
-h2 {
+h2, #curr_status {
     font-size: 24pt;
 }
 
-/*#about-me, #rpdu {
+/*#about_me, #rpdu {
     padding-top: 16pt;
     color: rgb(247, 134, 247);
 }*/
