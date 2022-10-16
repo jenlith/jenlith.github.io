@@ -11,4 +11,5 @@ function aJQuery () {
     $('#test3').load('navbar.html');
     $('#test4').text("Hi");
     //$('#c1').text("Darth Vader");
+    alert(":(");
 }
