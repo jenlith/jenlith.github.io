@@ -12,6 +12,8 @@ body {
     /* Flex */
     display: flex;
     flex-direction: column;
+    /* colour? */
+    color: gold;
 }
 
 .nav {
@@ -30,7 +32,7 @@ p,
 ul,
 li,
 text {
-    color: gold;
+    /* color: gold; */
     font-size: 20pt;
 }
 
