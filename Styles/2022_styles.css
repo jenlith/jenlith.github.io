@@ -1,0 +1,74 @@
+/* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
+    background-color: rgb(5, 73, 73);
+    font-family: monospace;
+    line-height: 1.6;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: block;
+    font-size: 14pt;
+    border-color: goldenrod;
+    border-width: 3px;
+}
+
+/* Standard Items */
+h1,
+h2,
+h3,
+a,
+p,
+ul,
+li,
+text {
+    color: gold;
+    font-size: 20pt;
+}
+
+/* Link Colours */
+a:link {
+    color: aqua;
+}
+
+a:hover,
+a:visited:hover {
+    color: aliceblue;
+    /*create border?*/
+}
+
+a:visited {
+    color: cadetblue;
+}
+
+a:active {
+    color: bisque;
+}
+
+/* Specific Edits */
+h1 {
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 28pt;
+}
+
+/* Flex */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
