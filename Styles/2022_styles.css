@@ -64,6 +64,23 @@ h2 {
     font-size: 28pt;
 }
 
+/* hr */
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+.pill {
+    height: 0px;
+    border-radius: 2px;
+    color: gold;
+    border: 2px solid currentColor;
+    width: 80%;
+}
+
 /* Flex */
 .horizontal {
     display: flex;
