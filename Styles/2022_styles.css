@@ -99,4 +99,10 @@ hr {
 
 #overview {
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.indv_goal {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
