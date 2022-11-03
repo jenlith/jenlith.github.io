@@ -66,11 +66,13 @@ h2 {
 
 /* hr */
 hr {
-    border: 0;
+    /* border: 0; */
+    border: 1;
     margin: 1.35em auto;
     max-width: 100%;
     background-position: 50%;
     box-sizing: border-box;
+    color: antiquewhite;
 }
 
 .pill {
@@ -85,6 +87,7 @@ hr {
 .horizontal {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .vertical {
@@ -103,6 +106,7 @@ hr {
 }
 
 .indv_goal {
+    /* maybe don't wrap */
     flex-wrap: wrap;
     justify-content: space-between;
 }
