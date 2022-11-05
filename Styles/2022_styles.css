@@ -55,9 +55,9 @@ a:active {
     color: bisque;
 }
 
-/* Specific Edits */
+/* Specific Text Edits */
 h1 {
-    font-size: 30pt;
+    font-size: 32pt;
 }
 
 h2 {
@@ -107,6 +107,12 @@ hr {
 
 .indv_goal {
     /* maybe don't wrap */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+}
+
+/* Image Sizing */
+.two_hundred {
+    height: 200;
+    width: auto;
 }
