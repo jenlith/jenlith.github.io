@@ -113,6 +113,7 @@ hr {
 
 /* Image Sizing */
 .two_hundred {
-    height: 200;
-    width: auto;
+    /* height: 200; width: auto; */
+    width: 25%;
+    height: auto;
 }
