@@ -125,23 +125,24 @@ hr {
 /* (A) FIXED IMAGE DIMENSIONS */
 .fixed_dimensions {
     border: 5px solid red;
-    width: 500px;
+    /* width: 500px; */
+    width: 300px;
     height: 200px;
 }
 
 /* (B) RESIZE BEHAVIOR */
-.fixed_dimensions.contain {
+/* .fixed_dimensions.contain {
     object-fit: contain;
-}
+} */
 
-.fixed_dimensions.cover {
+/* .fixed_dimensions.cover {
     object-fit: cover;
-}
+} */
 
 .fixed_dimensions.scale {
     object-fit: scale-down;
 }
 
-.fixed_dimensions.fill {
+/* .fixed_dimensions.fill {
     object-fit: fill;
-}
+} */
