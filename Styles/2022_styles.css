@@ -113,7 +113,35 @@ hr {
 
 /* Image Sizing */
 .two_hundred {
-    /* height: 200; width: auto; */
+    height: 200;
+    width: auto;
+}
+
+.percent {
     width: 25%;
     height: auto;
+}
+
+/* (A) FIXED IMAGE DIMENSIONS */
+.fixed_dimensions {
+    border: 5px solid red;
+    width: 500px;
+    height: 200px;
+}
+
+/* (B) RESIZE BEHAVIOR */
+.fixed_dimensions.contain {
+    object-fit: contain;
+}
+
+.fixed_dimensions.cover {
+    object-fit: cover;
+}
+
+.fixed_dimensions.scale {
+    object-fit: scale-down;
+}
+
+.fixed_dimensions.fill {
+    object-fit: fill;
 }
