@@ -64,6 +64,14 @@ h2 {
     font-size: 28pt;
 }
 
+p {
+    padding: 2%;
+}
+
+img {
+    padding: 2%;
+}
+
 /* hr */
 hr {
     /* border: 0; */
@@ -87,7 +95,7 @@ hr {
 .horizontal {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .vertical {
@@ -102,7 +110,7 @@ hr {
 
 #overview {
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
 }
 
