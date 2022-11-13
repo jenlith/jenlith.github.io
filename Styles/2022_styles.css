@@ -127,6 +127,11 @@ hr {
     height: auto;
 }
 
+.logo_percent {
+    width: 25%;
+    height: auto;
+}
+
 /* (A) FIXED IMAGE DIMENSIONS */
 .fixed_dimensions {
     border: 2px solid goldenrod;
