@@ -127,9 +127,11 @@ hr {
     height: auto;
 }
 
-.logo_percent {
-    width: 25%;
+.logo_img {
+    width: 90%;
     height: auto;
+    margin: 5%;
+    align-self: center;
 }
 
 /* (A) FIXED IMAGE DIMENSIONS */
