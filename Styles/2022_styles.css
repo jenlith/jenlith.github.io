@@ -24,9 +24,6 @@ body {
 }
 
 /* Standard Items */
-h1,
-h2,
-h3,
 a,
 p,
 ul,
@@ -64,6 +61,10 @@ h2 {
     font-size: 28pt;
 }
 
+h3 {
+    font-size: 24pt;
+}
+
 p {
     /* padding: 2%; */
     padding-left: 5%;
@@ -74,7 +75,7 @@ img {
     padding: 2%;
 }
 
-/* hr */
+/* hr lines */
 hr {
     /* border: 0; */
     border: 1;
@@ -128,7 +129,7 @@ hr {
 }
 
 .logo_img {
-    width: 90%;
+    width: 20%;
     height: auto;
     margin: 5%;
     align-self: center;
