@@ -128,11 +128,14 @@ hr {
     height: auto;
 }
 
-.logo_img {
+/* .logo_img {
     width: 20%;
-    /* height: auto; */
+    height: auto;
     margin: 5%;
     align-self: center;
+} */
+#rpdu_logo {
+    padding-top: 32%;
 }
 
 /* (A) FIXED IMAGE DIMENSIONS */
