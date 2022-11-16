@@ -130,7 +130,7 @@ hr {
 
 .logo_img {
     width: 20%;
-    height: auto;
+    /* height: auto; */
     margin: 5%;
     align-self: center;
 }
