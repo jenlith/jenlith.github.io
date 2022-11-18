@@ -128,15 +128,15 @@ hr {
     height: auto;
 }
 
-/* .logo_img {
+#logo_container {
+    padding-top: 32%;
+    /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
+}
+.logo_img {
     width: 20%;
     height: auto;
     margin: 5%;
     align-self: center;
-} */
-#rpdu_logo {
-    padding-top: 32%;
-    /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 }
 
 /* (A) FIXED IMAGE DIMENSIONS */
