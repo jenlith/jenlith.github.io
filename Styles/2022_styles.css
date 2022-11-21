@@ -131,11 +131,12 @@ hr {
 }
 
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
-/* #ops_logo_container {
-    padding-top: 32%;
-} */
+ #ops_logo_container {
+    /* padding-top: 32%; */
+    width: 30%;
+} 
 #ops_logo {
-    width: 20%;
+    width: 80%;
     height: auto;
     margin: 5%;
     /* align-self: center;
