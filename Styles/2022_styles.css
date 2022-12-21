@@ -14,12 +14,13 @@ body {
     flex-direction: column;
     /* colour? */
     color: gold;
+    font-size: 100%;
 }
 
 .nav {
     display: block;
     /* font-size: 14pt; */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-color: goldenrod;
     border-width: 3px;
 }
@@ -32,7 +33,36 @@ li,
 text {
     /* color: gold; */
     /* font-size: 20pt; */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+}
+
+/* Specific Text Edits */
+h1 {
+    /* font-size: 32pt; */
+    font-size: 1.6rem;
+}
+
+h2 {
+    /* font-size: 28pt; */
+    font-size: 1.5rem;
+}
+
+h3 {
+    /* font-size: 24pt; */
+    font-size: 1.4rem;
+}
+
+h4 {
+    /* font-size: 22pt; */
+    font-size: 1.3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+p {
+    /* padding: 2%; */
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 figcaption {
@@ -52,37 +82,13 @@ a:visited:hover {
 
 a:visited {
     /* color: cadetblue; */
-    color: brown;
+    color: burlywood;
 }
 
 a:active {
     color: bisque;
 }
 
-/* Specific Text Edits */
-h1 {
-    font-size: 32pt;
-}
-
-h2 {
-    font-size: 28pt;
-}
-
-h3 {
-    font-size: 24pt;
-}
-
-h4 {
-    font-size: 22pt;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-p {
-    /* padding: 2%; */
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 /* hr lines */
 hr {
