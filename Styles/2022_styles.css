@@ -19,7 +19,7 @@ body {
 .nav {
     display: block;
     /* font-size: 14pt; */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-color: goldenrod;
     border-width: 3px;
 }
@@ -31,10 +31,11 @@ ul,
 li,
 text {
     /* color: gold; */
-    font-size: 20pt;
+    /* font-size: 20pt; */
+    font-size: 1.1rem;
 }
 
-a {
+figcaption {
     font-size: 1rem;
 }
 
@@ -50,7 +51,8 @@ a:visited:hover {
 }
 
 a:visited {
-    color: cadetblue;
+    /* color: cadetblue; */
+    color: brown;
 }
 
 a:active {
@@ -116,6 +118,11 @@ hr {
 .center {
     align-items: center;
     justify-content: center;
+}
+
+.left {
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 #overview {
