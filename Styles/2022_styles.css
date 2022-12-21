@@ -8,7 +8,8 @@ body {
     padding-right: 80px; */
     background-color: rgb(5, 73, 73);
     font-family: monospace;
-    line-height: 1.6;
+    /* line-height: 1.6; */
+    line-height: 1.4;
     /* Flex */
     display: flex;
     flex-direction: column;
@@ -123,7 +124,8 @@ hr {
 
 .center {
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
 }
 
 .left {
@@ -154,10 +156,13 @@ img {
     height: auto;
 }
 
+.img_container_large {
+    width: 60%;
+}
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 #ops_logo_container {
     /* padding-top: 32%; */
-    width: 40%;
+    width: 50%;
 }
 
 #ops_logo {
