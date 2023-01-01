@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
 }
+
 /* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
 body {
     max-width: 1000px;
@@ -154,6 +155,11 @@ img {
     width: auto;
 }
 
+.three_hundred {
+    height: 300px;
+    width: auto;
+}
+
 .percent {
     width: 90%;
     height: auto;
@@ -162,20 +168,17 @@ img {
 .img_container_large {
     width: 60%;
 }
+
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 #ops_logo_container {
-    /* padding-top: 32%; */
+    padding-top: 32%;
     width: 50%;
 }
 
-#ops_logo {
-    /* width: 95%; */
+/* #ops_logo {
     width: 100%;
     height: auto;
-    /* margin: 5%; */
-    /* align-self: center;
-    justify-content: center; */
-}
+} */
 
 /* (A) FIXED IMAGE DIMENSIONS */
 .fixed_dimensions {
@@ -201,3 +204,27 @@ img {
 /* .fixed_dimensions.fill {
     object-fit: fill;
 } */
+
+/* Video, from bootstrap.min.css */
+.ratio {
+    position: relative;
+    width: 100%
+}
+
+.ratio::before {
+    display: block;
+    padding-top: var(--bs-aspect-ratio);
+    content: ""
+}
+
+.ratio>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.ratio_16x9 {
+    --bs-aspect-ratio: calc(9 / 16 * 100%)
+}
