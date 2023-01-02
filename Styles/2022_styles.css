@@ -171,8 +171,10 @@ img {
 
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 #ops_logo_container {
-    padding-top: 32%;
+    /* padding-top: 32%; */
     width: 50%;
+    padding-bottom: 32%;
+    max-height: fit-content;
 }
 
 /* #ops_logo {
@@ -208,7 +210,8 @@ img {
 /* Video, from bootstrap.min.css */
 .ratio {
     position: relative;
-    width: 100%
+    /* width: 100% */
+    width: 60%;
 }
 
 .ratio::before {
