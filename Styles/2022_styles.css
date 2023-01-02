@@ -160,6 +160,11 @@ img {
     width: auto;
 }
 
+.tall_img {
+    width:200px;
+    height: auto;
+}
+
 .percent {
     width: 90%;
     height: auto;
