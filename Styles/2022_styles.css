@@ -45,10 +45,6 @@ figcaption {
     font-size: 1.2rem;
 }
 
-figure {
-    border-color: burlywood;
-}
-
 /* Specific Text Edits */
 h1 {
     /* font-size: 32pt; */
@@ -152,6 +148,11 @@ hr {
 /* Image Sizing */
 img {
     padding: 2%;
+}
+figure {
+    border-color: burlywood;
+    border-width: 2px;
+    border-radius: 0.25rem;
 }
 
 .two_hundred {
