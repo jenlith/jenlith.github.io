@@ -161,7 +161,7 @@ img {
 }
 
 .tall_img {
-    width:200px;
+    width: 200px;
     height: auto;
 }
 
@@ -212,6 +212,13 @@ img {
     object-fit: fill;
 } */
 
+/* Video */
+video {
+    /* padding: 2%; */
+    padding-left: 10%;
+    /* padding-right: 5%; */
+}
+
 /* Video, from bootstrap.min.css */
 .ratio {
     position: relative;
@@ -225,7 +232,8 @@ img {
     content: ""
 }
 
-.ratio>* {
+/* .ratio>* { */
+.ratio {
     position: absolute;
     top: 0;
     left: 0;
