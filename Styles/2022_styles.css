@@ -109,12 +109,13 @@ hr {
 }
 
 /* Flex */
-@media  (min-width:800px) {
+@media (min-width:800px) {
     .horizontal {
         display: flex;
         flex-direction: row;
     }
 }
+
 @media (max-width:799px) {
     .horizontal {
         display: flex;
@@ -201,6 +202,8 @@ video {
     max-width: 60%;
     height: auto;
     height: var(calc(5 / 8 * 100%));
+    /* Resource just for future uses of video
+    https://www.w3schools.com/tags/tag_video.asp */
 }
 
 /* Video, from bootstrap.min.css */
