@@ -64,23 +64,33 @@ h4 {
     padding-right: 5%;
 }
 
-@media screen {
-    a, p, ul, li, text {
+@media (max-width: 800px) {
+
+    a,
+    p,
+    ul,
+    li,
+    text {
         font-size: 12pt;
     }
+
     figcaption {
         font-size: 10pt;
     }
+
     h4 {
         font-size: 16pt;
         font-style: italic;
     }
+
     h3 {
         font-size: 16pt;
     }
+
     h2 {
         font-size: 18pt;
     }
+
     h1 {
         font-size: 18pt;
         font-weight: bold;
@@ -132,7 +142,6 @@ hr {
 }
 
 /* Flex */
-/* Horizontal class on desktop */
 @media (min-width:800px) {
     .horizontal {
         display: flex;
@@ -140,7 +149,7 @@ hr {
     }
 }
 
-/* Horizontal class on mobile/smaller windows */
+/* horizontal class is vertical when the screen is too small */
 @media (max-width:799px) {
     .horizontal {
         display: flex;
@@ -223,10 +232,6 @@ img {
 /* Video */
 video {
     /* width="800" height="500" */
-    /* padding: 2%; */
-    /* padding-left: 10%; */
-    /* padding-right: 5%; */
-    /* max-height: fit-content; */
     max-width: 60%;
     height: auto;
     height: var(calc(5 / 8 * 100%));
