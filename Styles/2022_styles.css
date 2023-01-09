@@ -236,7 +236,7 @@ video {
     /* padding-left: 10%; */
     /* padding-right: 5%; */
     /* max-height: fit-content; */
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     height: var(calc(5 / 8 * 100%));
 }
