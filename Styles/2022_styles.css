@@ -145,14 +145,20 @@ hr {
     /* justify-content: space-evenly; */
 }
 
-/* Image Sizing */
+/* Image Formatting and Sizing */
+figure {
+    /* border-color: burlywood;
+    border-width: 2px;
+    border-radius: 0.25rem; */
+    /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5
+    border: 1px solid #000;
+    padding: 5px; */
+    border: 2px solid burlywood;
+    padding: 1px;
+}
+
 img {
     padding: 2%;
-}
-figure {
-    border-color: burlywood;
-    border-width: 2px;
-    border-radius: 0.25rem;
 }
 
 .two_hundred {
