@@ -227,6 +227,7 @@ video {
     max-width: 60%;
     height: auto;
     height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
     /* Resource just for future uses of video
     https://www.w3schools.com/tags/tag_video.asp */
 }
