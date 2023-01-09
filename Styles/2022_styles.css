@@ -64,6 +64,29 @@ h4 {
     padding-right: 5%;
 }
 
+@media screen {
+    a, p, ul, li, text {
+        font-size: 12pt;
+    }
+    figcaption {
+        font-size: 10pt;
+    }
+    h4 {
+        font-size: 16pt;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 16pt;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+    h1 {
+        font-size: 18pt;
+        font-weight: bold;
+    }
+}
+
 p {
     padding-left: 5%;
     padding-right: 5%;
@@ -109,6 +132,7 @@ hr {
 }
 
 /* Flex */
+/* Horizontal class on desktop */
 @media (min-width:800px) {
     .horizontal {
         display: flex;
@@ -116,6 +140,7 @@ hr {
     }
 }
 
+/* Horizontal class on mobile/smaller windows */
 @media (max-width:799px) {
     .horizontal {
         display: flex;
