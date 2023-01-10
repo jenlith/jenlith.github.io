@@ -27,8 +27,8 @@ body {
     border-width: 3px;
 }
 
-/* Standard Items */
-@media (min-width: 800px) {
+/* Standard Items, Desktop Only */
+@media (min-width: 1000px) {
     /* .nav {
         /* font-size: 14pt; 
         font-size: 1.2rem;
@@ -69,6 +69,28 @@ body {
         font-size: 1.3rem;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .width_30 {
+        width: 30%;
+    }
+
+    .width_40 {
+        width: 40%;
+    }
+
+    .width_50 {
+        width: 50%;
+    }
+
+    .width_60 {
+        width: 60%;
+    }
+
+    /* Flex */
+    .horizontal {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -116,13 +138,7 @@ hr {
     width: 80%;
 }
 
-/* Flex */
-@media (min-width:800px) {
-    .horizontal {
-        display: flex;
-        flex-direction: row;
-    }
-}
+
 
 /* Keep horizontal always */
 .special_horizontal {
@@ -221,24 +237,6 @@ img {
     height: auto;
 }
 
-@media (min-width:800px) {
-    .width_30 {
-        width: 30%;
-    }
-
-    .width_40 {
-        width: 40%;
-    }
-
-    .width_50 {
-        width: 50%;
-    }
-
-    .width_60 {
-        width: 60%;
-    }
-}
-
 /* Video */
 video {
     /* width="800" height="500" */
@@ -251,7 +249,7 @@ video {
 }
 
 /* horizontal class is vertical when the screen is too small */
-@media (max-width:799px) {
+@media (max-width:999px) {
 
     /* Font font hard-set */
     a,
