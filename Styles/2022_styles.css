@@ -29,6 +29,7 @@ body {
 
 /* Standard Items */
 @media (min-width: 800px) {
+
     a,
     p,
     ul,
@@ -159,7 +160,8 @@ img {
 }
 
 #rpdu_image {
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    border-radius: 50%;
 }
 
 .two_hundred {
@@ -211,10 +213,24 @@ video {
         display: flex;
         flex-direction: column;
     }
-}
 
-/* Font font hard-set */
-@media (max-width: 799px) {
+    video {
+        max-width: 90%;
+        height: auto;
+        height: var(calc(5 / 8 * 100%));
+        margin-bottom: 5%;
+    }
+
+    /* image adjusting */
+    .two_hundred,
+    .three_hundred,
+    .tall_img,
+    .percent {
+        height: auto;
+        width: 90%;
+    }
+
+    /* Font font hard-set */
     a,
     p,
     ul,
