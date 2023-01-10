@@ -28,72 +28,41 @@ body {
 }
 
 /* Standard Items */
-a,
-p,
-ul,
-li,
-text {
-    /* font-size: 20pt; */
-    font-size: 1.3rem;
-}
-
-figcaption {
-    font-size: 1.2rem;
-}
-
-/* Specific Text Edits */
-h1 {
-    /* font-size: 32pt; */
-    font-size: 1.7rem;
-}
-
-h2 {
-    /* font-size: 28pt; */
-    font-size: 1.6rem;
-}
-
-h3 {
-    /* font-size: 24pt; */
-    font-size: 1.5rem;
-}
-
-h4 {
-    /* font-size: 22pt; */
-    font-size: 1.3rem;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-@media (max-width: 800px) {
-
+@media (min-width: 800px) {
     a,
     p,
     ul,
     li,
     text {
-        font-size: 12pt;
+        /* font-size: 20pt; */
+        font-size: 1.3rem;
     }
 
     figcaption {
-        font-size: 10pt;
+        font-size: 1.2rem;
     }
 
-    h4 {
-        font-size: 16pt;
-        font-style: italic;
-    }
-
-    h3 {
-        font-size: 16pt;
+    /* Specific Text Edits */
+    h1 {
+        /* font-size: 32pt; */
+        font-size: 1.7rem;
     }
 
     h2 {
-        font-size: 18pt;
+        /* font-size: 28pt; */
+        font-size: 1.6rem;
     }
 
-    h1 {
-        font-size: 18pt;
-        font-weight: bold;
+    h3 {
+        /* font-size: 24pt; */
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        /* font-size: 22pt; */
+        font-size: 1.3rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
@@ -149,14 +118,6 @@ hr {
     }
 }
 
-/* horizontal class is vertical when the screen is too small */
-@media (max-width:799px) {
-    .horizontal {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .vertical {
     display: flex;
     flex-direction: column;
@@ -196,6 +157,7 @@ img {
     /* padding-right: 10px; */
     padding-right: 5%;
 }
+
 #rpdu_image {
     border-radius: 1rem;
 }
@@ -242,29 +204,58 @@ video {
     https://www.w3schools.com/tags/tag_video.asp */
 }
 
-/* Video, from bootstrap.min.css */
-/* .ratio {
-    position: relative;
-    /* width: 100% 
-    width: 40%;
-    /* height: auto;
-} */
 
-/* .ratio::before {
-    display: block;
-    padding-top: var(--bs-aspect-ratio);
-    content: ""
-} */
+/* horizontal class is vertical when the screen is too small */
+@media (max-width:799px) {
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-/* .ratio>* {
-    /* .ratio {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%
-} */
+/* Font font hard-set */
+@media (max-width: 799px) {
+    a,
+    p,
+    ul,
+    li,
+    text {
+        /* font-size: 20pt; */
+        /* font-size: 1.3rem; */
+        font-size: 12pt;
+    }
 
-/* .ratio_16x9 {
-    --bs-aspect-ratio: calc(9 / 16 * 100%)
-} */
+    figcaption {
+        font-size: 10pt;
+        /* font-size: 1.2rem; */
+    }
+
+    /* Specific Text Edits */
+    h1 {
+        /* font-size: 32pt; */
+        /* font-size: 1.7rem; */
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    h2 {
+        /* font-size: 28pt; */
+        /* font-size: 1.6rem; */
+        font-size: 18pt;
+    }
+
+    h3 {
+        /* font-size: 24pt; */
+        /* font-size: 1.5rem; */
+        font-size: 16pt;
+    }
+
+    h4 {
+        /* font-size: 22pt; */
+        /* font-size: 1.3rem; */
+        font-size: 16pt;
+        font-style: italic;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
