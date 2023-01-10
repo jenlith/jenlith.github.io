@@ -22,76 +22,9 @@ body {
 .nav {
     display: block;
     /* font-size: 14pt; */
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     border-color: goldenrod;
     border-width: 3px;
-}
-
-/* Standard Items, Desktop Only */
-@media (min-width: 1000px) {
-    /* .nav {
-        /* font-size: 14pt; 
-        font-size: 1.2rem;
-    } */
-
-    a,
-    p,
-    ul,
-    li,
-    text,
-    .nav {
-        /* font-size: 20pt; */
-        font-size: 1.3rem;
-    }
-
-    figcaption {
-        font-size: 1.2rem;
-    }
-
-    /* Specific Text Edits */
-    h1 {
-        /* font-size: 32pt; */
-        font-size: 1.7rem;
-    }
-
-    h2 {
-        /* font-size: 28pt; */
-        font-size: 1.6rem;
-    }
-
-    h3 {
-        /* font-size: 24pt; */
-        font-size: 1.5rem;
-    }
-
-    h4 {
-        /* font-size: 22pt; */
-        font-size: 1.3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .width_30 {
-        width: 30%;
-    }
-
-    .width_40 {
-        width: 40%;
-    }
-
-    .width_50 {
-        width: 50%;
-    }
-
-    .width_60 {
-        width: 60%;
-    }
-
-    /* Flex */
-    .horizontal {
-        display: flex;
-        flex-direction: row;
-    }
 }
 
 p {
@@ -119,7 +52,6 @@ a:active {
     color: bisque;
 }
 
-
 /* hr lines */
 hr {
     border: 1;
@@ -138,16 +70,7 @@ hr {
     width: 80%;
 }
 
-
-
-/* Keep horizontal always */
-.special_horizontal {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    justify-content: space-around;
-}
-
+/* Flex */
 .vertical {
     display: flex;
     flex-direction: column;
@@ -162,7 +85,6 @@ hr {
     align-items: flex-start;
 }
 
-/* Flex for Specific Items */
 #overview {
     align-items: flex-start;
     /* justify-content: space-between; */
@@ -170,7 +92,15 @@ hr {
     /* justify-content: space-evenly; */
 }
 
-/* Image Formatting and Sizing */
+/* Exception to mobile rule */
+.special_horizontal {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+
+/* Figure/Image/Figcaption Styling */
 figure {
     /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5 */
     /* faded gold border colour */
@@ -179,6 +109,7 @@ figure {
     border-radius: 0.5rem;
 }
 
+/* Image Formatting and Sizing */
 img {
     padding: 2%;
 }
@@ -217,39 +148,106 @@ img {
     width: auto;
 }
 
-.two_hundred {
-    height: 200px;
-    width: auto;
-}
 
-.three_hundred {
-    height: 300px;
-    width: auto;
-}
+/* Desktop Only */
+@media (min-width: 900px) {
 
-.tall_img {
-    width: 200px;
-    height: auto;
-}
+    /* Text */
+    a,
+    p,
+    ul,
+    li,
+    text,
+    .nav {
+        /* font-size: 20pt; */
+        font-size: 1.3rem;
+    }
 
-.percent {
-    width: 90%;
-    height: auto;
-}
+    figcaption {
+        font-size: 1.2rem;
+    }
 
-/* Video */
-video {
-    /* width="800" height="500" */
-    max-width: 60%;
-    height: auto;
-    height: var(calc(5 / 8 * 100%));
-    margin-bottom: 5%;
-    /* Resource just for future uses of video
+    /* Specific Text Edits */
+    h1 {
+        /* font-size: 32pt; */
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        /* font-size: 28pt; */
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        /* font-size: 24pt; */
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        /* font-size: 22pt; */
+        font-size: 1.3rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Images */
+    .two_hundred {
+        height: 200px;
+        width: auto;
+    }
+
+    .three_hundred {
+        height: 300px;
+        width: auto;
+    }
+
+    .tall_img {
+        width: 200px;
+        height: auto;
+    }
+
+    .percent {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Video */
+    video {
+        /* width="800" height="500" */
+        max-width: 60%;
+        height: auto;
+        height: var(calc(5 / 8 * 100%));
+        margin-bottom: 5%;
+        /* Resource just for future uses of video
     https://www.w3schools.com/tags/tag_video.asp */
+    }
+
+    /* Widths */
+    .width_30 {
+        width: 30%;
+    }
+
+    .width_40 {
+        width: 40%;
+    }
+
+    .width_50 {
+        width: 50%;
+    }
+
+    .width_60 {
+        width: 60%;
+    }
+
+    /* Flex */
+    .horizontal {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /* horizontal class is vertical when the screen is too small */
-@media (max-width:999px) {
+@media (max-width:899px) {
 
     /* Font font hard-set */
     a,
@@ -299,6 +297,7 @@ video {
         padding-right: 5%;
     }
 
+    /* Flex: Only columns in mobile view */
     .horizontal {
         display: flex;
         flex-direction: column;
