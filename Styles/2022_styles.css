@@ -22,19 +22,24 @@ body {
 .nav {
     display: block;
     /* font-size: 14pt; */
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     border-color: goldenrod;
     border-width: 3px;
 }
 
 /* Standard Items */
 @media (min-width: 800px) {
+    /* .nav {
+        /* font-size: 14pt; 
+        font-size: 1.2rem;
+    } */
 
     a,
     p,
     ul,
     li,
-    text {
+    text,
+    .nav {
         /* font-size: 20pt; */
         font-size: 1.3rem;
     }
@@ -119,6 +124,12 @@ hr {
     }
 }
 
+/* Keep horizontal always */
+.special_horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
 .vertical {
     display: flex;
     flex-direction: column;
@@ -154,14 +165,32 @@ img {
     padding: 2%;
 }
 
-#rpdu_logo {
+#rpdu_logo_container {
     /* padding-right: 10px; */
     padding-right: 5%;
+    max-height: 2%;
 }
 
-#rpdu_image {
-    /* border-radius: 1rem; */
+#rpdu_logo {
     border-radius: 50%;
+}
+
+/* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
+#ops_logo_container {
+    /* padding-bottom: 32%; */
+    width: 60%;
+    height: calc(32%);
+    padding-bottom: 1%;
+}
+
+#FIFA_logo {
+    background-color: #1874c4;
+    border-radius: 0.5rem;
+    max-height: 2%;
+}
+
+#drop_the_pen_logo {
+    max-height: 2%;
 }
 
 .two_hundred {
@@ -184,15 +213,22 @@ img {
     height: auto;
 }
 
-.img_container_large {
-    width: 60%;
-}
+@media (min-width:800px) {
+    .width_30 {
+        width: 30%;
+    }
 
-/* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
-#ops_logo_container {
-    /* padding-bottom: 32%; */
-    width: 60%;
-    height: calc(32%);
+    .width_40 {
+        width: 40%;
+    }
+
+    .width_50 {
+        width: 50%;
+    }
+
+    .width_60 {
+        width: 60%;
+    }
 }
 
 /* Video */
@@ -206,36 +242,16 @@ video {
     https://www.w3schools.com/tags/tag_video.asp */
 }
 
-
 /* horizontal class is vertical when the screen is too small */
 @media (max-width:799px) {
-    .horizontal {
-        display: flex;
-        flex-direction: column;
-    }
-
-    video {
-        max-width: 90%;
-        height: auto;
-        height: var(calc(5 / 8 * 100%));
-        margin-bottom: 5%;
-    }
-
-    /* image adjusting */
-    .two_hundred,
-    .three_hundred,
-    .tall_img,
-    .percent {
-        height: auto;
-        width: 90%;
-    }
 
     /* Font font hard-set */
     a,
     p,
     ul,
     li,
-    text {
+    text,
+    .nav {
         /* font-size: 20pt; */
         /* font-size: 1.3rem; */
         font-size: 12pt;
@@ -252,6 +268,7 @@ video {
         /* font-size: 1.7rem; */
         font-size: 18pt;
         font-weight: bold;
+        padding-left: 5px;
     }
 
     h2 {
@@ -273,5 +290,26 @@ video {
         font-style: italic;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    video {
+        max-width: 90%;
+        height: auto;
+        height: var(calc(5 / 8 * 100%));
+        margin-bottom: 5%;
+    }
+
+    /* image adjusting */
+    .two_hundred,
+    .three_hundred,
+    .tall_img,
+    .percent {
+        height: auto;
+        width: 90%;
     }
 }
