@@ -148,6 +148,84 @@ img {
     width: auto;
 }
 
+/* Fallback for desktop vs mobile styling */
+/* Text */
+a,
+p,
+ul,
+li,
+text,
+.nav,
+figcaption {
+    font-size: 1.3rem;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    /* font-size: 28pt; */
+    font-size: 1.6rem;
+}
+
+h4 {
+    /* font-size: 22pt; */
+    font-size: 1.3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Images */
+.two_hundred {
+    height: 200px;
+    width: auto;
+}
+
+.three_hundred {
+    height: 300px;
+    width: auto;
+}
+
+.tall_img {
+    width: 200px;
+    height: auto;
+}
+
+.percent {
+    width: 90%;
+    height: auto;
+}
+
+/* Video */
+video {
+    max-width: 60%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+}
+
+/* Widths */
+.width_30 {
+    width: 30%;
+}
+
+.width_40 {
+    width: 40%;
+}
+
+.width_50 {
+    width: 50%;
+}
+
+.width_60 {
+    width: 60%;
+}
+
+/* Flex */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Desktop Only */
 @media (min-width: 900px) {
