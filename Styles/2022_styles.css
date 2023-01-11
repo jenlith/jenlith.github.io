@@ -211,171 +211,174 @@ video {
 
 /* Desktop Only */
 @media (min-width: 900px) {
+    @supports (-ms-ime-align: auto) {
 
-    /* Text */
-    a,
-    p,
-    ul,
-    li,
-    text,
-    .nav {
-        /* font-size: 20pt; */
-        font-size: 1.3rem;
-    }
+        /* Text */
+        a,
+        p,
+        ul,
+        li,
+        text,
+        .nav {
+            /* font-size: 20pt; */
+            font-size: 1.3rem;
+        }
 
-    figcaption {
-        font-size: 1.2rem;
-    }
+        figcaption {
+            font-size: 1.2rem;
+        }
 
-    /* Specific Text Edits */
-    h1 {
-        /* font-size: 32pt; */
-        font-size: 1.7rem;
-    }
+        /* Specific Text Edits */
+        h1 {
+            /* font-size: 32pt; */
+            font-size: 1.7rem;
+        }
 
-    h2 {
-        /* font-size: 28pt; */
-        font-size: 1.6rem;
-    }
+        h2 {
+            /* font-size: 28pt; */
+            font-size: 1.6rem;
+        }
 
-    h3 {
-        /* font-size: 24pt; */
-        font-size: 1.5rem;
-    }
+        h3 {
+            /* font-size: 24pt; */
+            font-size: 1.5rem;
+        }
 
-    h4 {
-        /* font-size: 22pt; */
-        font-size: 1.3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+        h4 {
+            /* font-size: 22pt; */
+            font-size: 1.3rem;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
-    /* Images */
-    .two_hundred {
-        height: 200px;
-        width: auto;
-    }
+        /* Images */
+        .two_hundred {
+            height: 200px;
+            width: auto;
+        }
 
-    .three_hundred {
-        height: 300px;
-        width: auto;
-    }
+        .three_hundred {
+            height: 300px;
+            width: auto;
+        }
 
-    .tall_img {
-        width: 200px;
-        height: auto;
-    }
+        .tall_img {
+            width: 200px;
+            height: auto;
+        }
 
-    .percent {
-        width: 90%;
-        height: auto;
-    }
+        .percent {
+            width: 90%;
+            height: auto;
+        }
 
-    /* Video */
-    video {
-        /* width="800" height="500" */
-        max-width: 60%;
-        height: auto;
-        height: var(calc(5 / 8 * 100%));
-        margin-bottom: 5%;
-        /* Resource just for future uses of video
-    https://www.w3schools.com/tags/tag_video.asp */
-    }
+        /* Video */
+        video {
+            /* width="800" height="500" */
+            max-width: 60%;
+            height: auto;
+            height: var(calc(5 / 8 * 100%));
+            margin-bottom: 5%;
+            /* Resource just for future uses of video: https://www.w3schools.com/tags/tag_video.asp */
+        }
 
-    /* Widths */
-    .width_30 {
-        width: 30%;
-    }
+        /* Widths */
+        .width_30 {
+            width: 30%;
+        }
 
-    .width_40 {
-        width: 40%;
-    }
+        .width_40 {
+            width: 40%;
+        }
 
-    .width_50 {
-        width: 50%;
-    }
+        .width_50 {
+            width: 50%;
+        }
 
-    .width_60 {
-        width: 60%;
-    }
+        .width_60 {
+            width: 60%;
+        }
 
-    /* Flex */
-    .horizontal {
-        display: flex;
-        flex-direction: row;
+        /* Flex */
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
 
 /* horizontal class is vertical when the screen is too small */
 @media (max-width:899px) {
+    @supports (-ms-ime-align: auto) {
 
-    /* Font font hard-set */
-    a,
-    p,
-    ul,
-    li,
-    text,
-    .nav {
-        /* font-size: 20pt; */
-        /* font-size: 1.3rem; */
-        font-size: 12pt;
-    }
+        /* Font font hard-set */
+        a,
+        p,
+        ul,
+        li,
+        text,
+        .nav {
+            /* font-size: 20pt; */
+            /* font-size: 1.3rem; */
+            font-size: 12pt;
+        }
 
-    figcaption {
-        font-size: 10pt;
-        /* font-size: 1.2rem; */
-    }
+        figcaption {
+            font-size: 10pt;
+            /* font-size: 1.2rem; */
+        }
 
-    /* Specific Text Edits */
-    h1 {
-        /* font-size: 32pt; */
-        /* font-size: 1.7rem; */
-        font-size: 18pt;
-        font-weight: bold;
-        padding-left: 5px;
-    }
+        /* Specific Text Edits */
+        h1 {
+            /* font-size: 32pt; */
+            /* font-size: 1.7rem; */
+            font-size: 18pt;
+            font-weight: bold;
+            padding-left: 5px;
+        }
 
-    h2 {
-        /* font-size: 28pt; */
-        /* font-size: 1.6rem; */
-        font-size: 18pt;
-    }
+        h2 {
+            /* font-size: 28pt; */
+            /* font-size: 1.6rem; */
+            font-size: 18pt;
+        }
 
-    h3 {
-        /* font-size: 24pt; */
-        /* font-size: 1.5rem; */
-        font-size: 16pt;
-        padding-left: 10px;
-    }
+        h3 {
+            /* font-size: 24pt; */
+            /* font-size: 1.5rem; */
+            font-size: 16pt;
+            padding-left: 10px;
+        }
 
-    h4 {
-        /* font-size: 22pt; */
-        /* font-size: 1.3rem; */
-        font-size: 16pt;
-        font-style: italic;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+        h4 {
+            /* font-size: 22pt; */
+            /* font-size: 1.3rem; */
+            font-size: 16pt;
+            font-style: italic;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
-    /* Flex: Only columns in mobile view */
-    .horizontal {
-        display: flex;
-        flex-direction: column;
-    }
+        /* Flex: Only columns in mobile view */
+        .horizontal {
+            display: flex;
+            flex-direction: column;
+        }
 
-    video {
-        max-width: 90%;
-        height: auto;
-        height: var(calc(5 / 8 * 100%));
-        margin-bottom: 5%;
-    }
+        video {
+            max-width: 90%;
+            height: auto;
+            height: var(calc(5 / 8 * 100%));
+            margin-bottom: 5%;
+        }
 
-    /* image adjusting */
-    .two_hundred,
-    .three_hundred,
-    .tall_img,
-    .percent {
-        height: auto;
-        width: 90%;
+        /* image adjusting */
+        .two_hundred,
+        .three_hundred,
+        .tall_img,
+        .percent {
+            height: auto;
+            width: 90%;
+        }
     }
 }
