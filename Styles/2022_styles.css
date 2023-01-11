@@ -148,84 +148,66 @@ img {
     width: auto;
 }
 
-/* Fallback for desktop vs mobile styling */
-/* Text */
+/* Fallback for desktop vs mobile styling (it's the mobile) */
 a,
 p,
 ul,
 li,
 text,
-.nav,
+.nav {
+    font-size: 12pt;
+}
+
 figcaption {
-    font-size: 1.3rem;
+    font-size: 10pt;
 }
 
 /* Headers */
-h1,
-h2,
+h1 {
+    font-size: 18pt;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
 h3 {
-    /* font-size: 28pt; */
-    font-size: 1.6rem;
+    font-size: 16pt;
+    padding-left: 10px;
 }
 
 h4 {
-    /* font-size: 22pt; */
-    font-size: 1.3rem;
+    font-size: 16pt;
+    font-style: italic;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-/* Images */
-.two_hundred {
-    height: 200px;
-    width: auto;
+/* Flex: Only columns in mobile view */
+.horizontal {
+    display: flex;
+    flex-direction: column;
 }
 
-.three_hundred {
-    height: 300px;
-    width: auto;
-}
-
-.tall_img {
-    width: 200px;
-    height: auto;
-}
-
-.percent {
-    width: 90%;
-    height: auto;
-}
-
-/* Video */
 video {
-    max-width: 60%;
+    max-width: 90%;
     height: auto;
     height: var(calc(5 / 8 * 100%));
     margin-bottom: 5%;
 }
 
-/* Widths */
-.width_30 {
-    width: 30%;
+/* image adjusting */
+.two_hundred,
+.three_hundred,
+.tall_img,
+.percent {
+    height: auto;
+    width: 90%;
 }
 
-.width_40 {
-    width: 40%;
-}
-
-.width_50 {
-    width: 50%;
-}
-
-.width_60 {
-    width: 60%;
-}
-
-/* Flex */
-.horizontal {
-    display: flex;
-    flex-direction: row;
-}
+/* End fallback */
 
 /* Desktop Only */
 @media (min-width: 900px) {
