@@ -1,25 +1,78 @@
-/*html {
-    background-color: black;
-}*/
-
-body {
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    background-color: rgb(5, 73, 73);
-    font-family: monospace;
-    line-height: 1.6;
-}
+/* https://stackoverflow.com/questions/51741141/media-queries-with-edge-css-hack */
+/* @supports (-ms-ime-align: auto)  */
+/* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 /* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
 
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(5, 73, 73);
+  font-family: monospace;
+  line-height: 1.4;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text colours + styling */
+h1 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-style: italic;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .nav {
+  display: block;
+  border-color: goldenrod;
+  border-width: 3px;
+}
+/* .nav {
     display: block;
-     font-size: 14pt; 
+     font-size: 14pt;
     border-color: goldenrod;
     border-width: 3px;
+} */
+
+p {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/* Link Colours */
+a:link {
+  color: aqua;
+}
+
+a:hover,
+a:visited:hover {
+  color: aliceblue;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: burlywood;
+}
+
+a:active {
+  color: bisque;
+}
+
+svg {
+  fill: aqua;
+  padding-left: 2px;
 }
 
 /* Standard Items */
@@ -27,66 +80,219 @@ h1,
 h2,
 h3,
 a,
-p, 
+p,
 ul,
 li,
 text {
-    color: gold;
-    font-size: 20pt;
+  color: gold;
+  font-size: 20pt;
 }
 
-table,
-tr {
-    color: gold;
-    font-size: 20pt;
-    width: auto;
+/* hr lines */
+hr {
+  border: 1;
+  margin: 1.35rem auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+  color: antiquewhite;
 }
 
-th,
-td {
-    color: gold;
-    font-size: 20pt;
-    max-width: 30%;
+.pill {
+  height: 0px;
+  border-radius: 2px;
+  color: gold;
+  border: 2px solid currentColor;
+  width: 80%;
 }
 
-/* Specific Edits */
-h1, #name_and_title {
-    font-size: 28pt;
+/* Flex */
+.vertical {
+  display: flex;
+  flex-direction: column;
 }
 
-h2, #curr_status {
-    font-size: 24pt;
+@media screen and (min-width: 900px) {
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-/*#about_me, #rpdu {
-    padding-top: 16pt;
-    color: rgb(247, 134, 247);
-}*/
-
-/* Link Colours */
-
-a:link {
-    color: aqua;
+@media screen and (max-width: 899px) {
+  /* Flex: Only columns in mobile view */
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-a:hover,
-a:visited:hover {
-    color: aliceblue;
-    /*create border?*/
+/* Flex: Exception to mobile rule */
+.special_horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-a:visited {
-    color: cadetblue;
+/* Flex: Justify Contents */
+.center {
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-a:active {
-    color: bisque;
+/* Figure/Image Styling */
+figure {
+  /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5 */
+  /* faded gold border colour */
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  padding: 5px;
+  border-radius: 0.5rem;
 }
 
-/* Table */
-.table-bordered {
-    border-color: limegreen;
-    border-width: 2px;
+/* image adjusting */
+img {
+  height: auto;
+  width: 100%;
+}
+
+.image_container {
+  max-width: 95%;
+}
+
+.image_container_small {
+  max-width: 10%;
+}
+
+#jira {
+  max-width: 100%;
+  height: 70%;
+  background-color: lightblue;
+  padding-left: 1%;
+  margin-left: 30%;
+  margin-top: 9%;
+}
+
+.myEclipse {
+  max-width: 100%;
+  height: auto;
+  padding-left: 1%;
+  margin-left: 30%;
+}
+
+#clock {
+  max-width: 50%;
+  height: auto;
+  margin-left: 30%;
+  margin-top: 9%;
+  background-color: lightblue;
+  border-radius: 50%;
+  padding-left: 1%;
+}
+
+#pen_and_paper {
+  max-width: 50%;
+  height: auto;
+  margin-left: 30%;
+  margin-top: 9%;
+  background-color: lightblue;
+  border-radius: 10%;
+  padding: 1%;
+}
+
+/* Font Size */
+/* Universal/Fallback Start */
+/* Universal/Fallback End */
+
+/* Mobile */
+@media screen and (max-width: 899px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  a,
+  p,
+  ul,
+  li,
+  text {
+    font-size: 1.2rem;
+  }
+
+  figcaption {
+    font-size: 1.1rem;
+  }
+
+  video {
+    max-width: 90%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+  }
+}
+
+/* Desktop customisation */
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  a,
+  p,
+  ul,
+  li,
+  text {
+    font-size: 1.3rem;
+  }
+
+  figcaption {
+    font-size: 1.2rem;
+  }
+
+  #nav h2 {
+    padding-left: 15%;
+  }
+
+  #nav li {
+    list-style-type: none;
+  }
+
+  #intro {
+    padding-left: 5%;
+  }
+
+  .goal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .goal h4 {
+    min-width: 21%;
+  }
+
+  .goal p {
+    padding-left: 0;
+  }
+
+  .one_line {
+    align-items: center;
+  }
 }
 
 /*background-color: darkcyan;*/
