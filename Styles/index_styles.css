@@ -29,11 +29,11 @@ li,
 text,
 figcaption {
   color: gold;
-  font-size: 1.1rem; /*16pt*/
+  font-size: 1.3rem;
 }
 
 figcaption {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 p {
