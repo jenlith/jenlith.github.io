@@ -278,7 +278,7 @@ img {
   /* Flex: Default: Only columns in mobile view */
   .horizontal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
