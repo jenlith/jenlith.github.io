@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 
-/* Text colours + styling */
+/* Text Styling */
 h1 {
   font-weight: bold;
 }
@@ -69,7 +69,7 @@ svg {
   padding-left: 2px;
 }
 
-/* Standard Items */
+/* Standard/Default Font and Colour */
 h1,
 h2,
 h3,
@@ -100,36 +100,24 @@ hr {
   width: 80%;
 }
 
-/* Flex start */
-/* Justify Contents */
+/* Flex: Justify Contents */
 .center {
   align-items: center;
   justify-content: space-evenly;
 }
 
-/* Default: Only columns in mobile view */
-.vertical,
-.horizontal {
+/* Flex: Allow for vertical sections */
+.vertical {
   display: flex;
   flex-direction: column;
 }
 
-/* Flex: Exception to mobile rule */
+/* Flex: Exception to mobile rule of everything vertical */
 .special_horizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-/* Allow rows on desktop/wider screens */
-@media screen and (min-width: 900px) {
-  .horizontal {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* Flex end */
 
 /* Figure/Image Styling */
 figure {
@@ -190,10 +178,6 @@ img {
   padding: 1%;
 }
 
-/* Font Size */
-/* Universal/Fallback Start */
-/* Universal/Fallback End */
-
 /* Mobile */
 @media screen and (max-width: 899px) {
   h1 {
@@ -226,6 +210,12 @@ img {
     height: auto;
     height: var(calc(5 / 8 * 100%));
     margin-bottom: 5%;
+  }
+
+  /* Flex: Default: Only columns in mobile view */
+  .horizontal {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -283,6 +273,12 @@ img {
 
   .one_line {
     align-items: center;
+  }
+
+  /* Flex: Allow rows on desktop/wider screens */
+  .horizontal {
+    display: flex;
+    flex-direction: row;
   }
 }
 
