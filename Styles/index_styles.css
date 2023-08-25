@@ -178,48 +178,7 @@ img {
   padding: 1%;
 }
 
-/* Mobile */
-@media screen and (max-width: 899px) {
-  h1 {
-    font-size: 1.9rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3,
-  h4 {
-    font-size: 1.4rem;
-  }
-
-  a,
-  p,
-  ul,
-  li,
-  text {
-    font-size: 1.2rem;
-  }
-
-  figcaption {
-    font-size: 1.1rem;
-  }
-
-  video {
-    max-width: 90%;
-    height: auto;
-    height: var(calc(5 / 8 * 100%));
-    margin-bottom: 5%;
-  }
-
-  /* Flex: Default: Only columns in mobile view */
-  .horizontal {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* Desktop customisation */
+/* Desktop */
 @media screen and (min-width: 900px) {
   h1 {
     font-size: 2.5rem;
@@ -276,6 +235,47 @@ img {
   }
 
   /* Flex: Allow rows on desktop/wider screens */
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 899px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  a,
+  p,
+  ul,
+  li,
+  text {
+    font-size: 1.2rem;
+  }
+
+  figcaption {
+    font-size: 1.1rem;
+  }
+
+  video {
+    max-width: 90%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+  }
+
+  /* Flex: Default: Only columns in mobile view */
   .horizontal {
     display: flex;
     flex-direction: row;
