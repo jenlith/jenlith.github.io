@@ -179,7 +179,8 @@ img {
 }
 
 /* Desktop */
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) { */
+@media (min-width: 900px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -242,7 +243,8 @@ img {
 }
 
 /* Mobile */
-@media screen and (max-width: 899px) {
+/* @media screen and (max-width: 899px) { */
+@media (max-width: 899px) {
   h1 {
     font-size: 1.9rem;
   }
