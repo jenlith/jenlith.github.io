@@ -28,13 +28,12 @@ ul,
 li,
 text,
 figcaption {
-  font-size: 1em;
   color: gold;
-  font-size: 1em; /*16pt*/
+  font-size: 1.1rem; /*16pt*/
 }
 
 figcaption {
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 
 p {
@@ -43,21 +42,21 @@ p {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.9em;
+  font-size: 1.9rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-style: italic;
   padding-left: 3%;
   padding-right: 3%;
@@ -109,7 +108,7 @@ svg {
 /* hr lines */
 hr {
   border: 1;
-  margin: 1.35em auto;
+  margin: 1.35rem auto;
   max-width: 100%;
   background-position: 50%;
   box-sizing: border-box;
@@ -149,7 +148,7 @@ figure {
   /* faded gold border colour */
   border: 2px solid rgba(255, 215, 0, 0.3);
   padding: 5px;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 /* image adjusting */
@@ -224,16 +223,16 @@ img {
 @media screen and (max-width: 1000px) {
   /* @media (max-width: 899px) { */
   h1 {
-    font-size: 1.9em;
+    font-size: 1.9rem;
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   h3,
   h4 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   a,
@@ -241,11 +240,11 @@ img {
   ul,
   li,
   text {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   figcaption {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 
   video {
