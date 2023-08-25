@@ -33,16 +33,10 @@ h4 {
   padding-right: 3%;
 }
 
-.nav {
+/* .nav {
   display: block;
   border-color: goldenrod;
   border-width: 3px;
-}
-/* .nav {
-    display: block;
-     font-size: 14pt;
-    border-color: goldenrod;
-    border-width: 3px;
 } */
 
 p {
@@ -106,25 +100,18 @@ hr {
   width: 80%;
 }
 
-/* Flex */
-.vertical {
+/* Flex start */
+/* Justify Contents */
+.center {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Default: Only columns in mobile view */
+.vertical,
+.horizontal {
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (min-width: 900px) {
-  .horizontal {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 899px) {
-  /* Flex: Only columns in mobile view */
-  .horizontal {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* Flex: Exception to mobile rule */
@@ -134,11 +121,15 @@ hr {
   justify-content: space-evenly;
 }
 
-/* Flex: Justify Contents */
-.center {
-  align-items: center;
-  justify-content: space-evenly;
+/* Allow rows on desktop/wider screens */
+@media screen and (min-width: 900px) {
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+/* Flex end */
 
 /* Figure/Image Styling */
 figure {

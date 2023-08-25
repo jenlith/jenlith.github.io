@@ -1,151 +1,151 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 /* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
 body {
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    background-color: rgb(5, 73, 73);
-    font-family: monospace;
-    line-height: 1.4;
-    /* Flex */
-    display: flex;
-    flex-direction: column;
-    /* colour? */
-    color: gold;
-    font-size: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: rgb(5, 73, 73);
+  font-family: monospace;
+  line-height: 1.4;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  /* colour? */
+  color: gold;
+  font-size: 100%;
 }
 
 .nav {
-    display: block;
-    /* font-size: 14pt; */
-    font-size: 1.2rem;
-    border-color: goldenrod;
-    border-width: 3px;
+  display: block;
+  /* font-size: 14pt; */
+  font-size: 1.2rem;
+  border-color: goldenrod;
+  border-width: 3px;
 }
 
 p {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Link Colours */
 a:link {
-    color: aqua;
+  color: aqua;
 }
 
 a:hover,
 a:visited:hover {
-    color: aliceblue;
-    /*create border?*/
-    font-weight: 600;
+  color: aliceblue;
+  /*create border?*/
+  font-weight: 600;
 }
 
 a:visited {
-    color: burlywood;
+  color: burlywood;
 }
 
 a:active {
-    color: bisque;
+  color: bisque;
 }
 
 /* hr lines */
 hr {
-    border: 1;
-    margin: 1.35em auto;
-    max-width: 100%;
-    background-position: 50%;
-    box-sizing: border-box;
-    color: antiquewhite;
+  border: 1;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+  color: antiquewhite;
 }
 
 .pill {
-    height: 0px;
-    border-radius: 2px;
-    color: gold;
-    border: 2px solid currentColor;
-    width: 80%;
+  height: 0px;
+  border-radius: 2px;
+  color: gold;
+  border: 2px solid currentColor;
+  width: 80%;
 }
 
 /* Flex */
 .vertical {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .center {
-    align-items: center;
-    justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .left {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 #overview {
-    align-items: flex-start;
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
 }
 
 /* Exception to mobile rule */
 .special_horizontal {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: space-evenly;
 }
 
 /* Figure/Image/Figcaption Styling */
 figure {
-    /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5 */
-    /* faded gold border colour */
-    border: 2px solid rgba(255, 215, 0, 0.3);
-    padding: 5px;
-    border-radius: 0.5rem;
+  /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5 */
+  /* faded gold border colour */
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  padding: 5px;
+  border-radius: 0.5rem;
 }
 
 /* Image Formatting and Sizing */
 img {
-    padding: 2%;
+  padding: 2%;
 }
 
 #rpdu_logo_container {
-    /* padding-right: 10px; */
-    padding-right: 5%;
-    /* max-height: 2%; */
+  /* padding-right: 10px; */
+  padding-right: 5%;
+  /* max-height: 2%; */
 }
 
 #rpdu_logo {
-    border-radius: 50%;
-    max-height: 150px;
-    width: auto;
+  border-radius: 50%;
+  max-height: 150px;
+  width: auto;
 }
 
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 #ops_logo_container {
-    /* padding-bottom: 32%; */
-    width: 60%;
-    height: calc(32%);
-    padding-bottom: 1%;
+  /* padding-bottom: 32%; */
+  width: 60%;
+  height: calc(32%);
+  padding-bottom: 1%;
 }
 
 #FIFA_logo {
-    background-color: #1874c4;
-    border-radius: 0.5rem;
-    /* max-height: 2%; */
-    max-height: 150px;
-    width: auto;
+  background-color: #1874c4;
+  border-radius: 0.5rem;
+  /* max-height: 2%; */
+  max-height: 150px;
+  width: auto;
 }
 
 #drop_the_pen_logo {
-    /* max-height: 2%; */
-    max-height: 150px;
-    width: auto;
+  /* max-height: 2%; */
+  max-height: 150px;
+  width: auto;
 }
 
 /* Fallback for desktop vs mobile styling (it's the mobile) */
@@ -155,47 +155,47 @@ ul,
 li,
 text,
 .nav {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 figcaption {
-    font-size: 10pt;
+  font-size: 10pt;
 }
 
 /* Headers */
 h1 {
-    font-size: 18pt;
-    font-weight: bold;
-    padding-left: 5px;
+  font-size: 18pt;
+  font-weight: bold;
+  padding-left: 5px;
 }
 
 h2 {
-    font-size: 18pt;
+  font-size: 18pt;
 }
 
 h3 {
-    font-size: 16pt;
-    padding-left: 10px;
+  font-size: 16pt;
+  padding-left: 10px;
 }
 
 h4 {
-    font-size: 16pt;
-    font-style: italic;
-    padding-left: 5%;
-    padding-right: 5%;
+  font-size: 16pt;
+  font-style: italic;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* Flex: Only columns in mobile view */
 .horizontal {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 video {
-    max-width: 90%;
-    height: auto;
-    height: var(calc(5 / 8 * 100%));
-    margin-bottom: 5%;
+  max-width: 90%;
+  height: auto;
+  height: var(calc(5 / 8 * 100%));
+  margin-bottom: 5%;
 }
 
 /* image adjusting */
@@ -203,181 +203,179 @@ video {
 .three_hundred,
 .tall_img,
 .percent {
-    height: auto;
-    width: 90%;
+  height: auto;
+  width: 90%;
 }
 
 /* End fallback */
 
 /* Desktop Only */
 @media screen and (min-width: 900px) {
+  /* Text */
+  a,
+  p,
+  ul,
+  li,
+  text,
+  .nav {
+    /* font-size: 20pt; */
+    font-size: 1.3rem;
+  }
 
-    /* Text */
-    a,
-    p,
-    ul,
-    li,
-    text,
-    .nav {
-        /* font-size: 20pt; */
-        font-size: 1.3rem;
-    }
+  figcaption {
+    font-size: 1.2rem;
+  }
 
-    figcaption {
-        font-size: 1.2rem;
-    }
+  /* Specific Text Edits */
+  h1 {
+    /* font-size: 32pt; */
+    font-size: 1.7rem;
+  }
 
-    /* Specific Text Edits */
-    h1 {
-        /* font-size: 32pt; */
-        font-size: 1.7rem;
-    }
+  h2 {
+    /* font-size: 28pt; */
+    font-size: 1.6rem;
+  }
 
-    h2 {
-        /* font-size: 28pt; */
-        font-size: 1.6rem;
-    }
+  h3 {
+    /* font-size: 24pt; */
+    font-size: 1.5rem;
+  }
 
-    h3 {
-        /* font-size: 24pt; */
-        font-size: 1.5rem;
-    }
+  h4 {
+    /* font-size: 22pt; */
+    font-size: 1.3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    h4 {
-        /* font-size: 22pt; */
-        font-size: 1.3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  /* Images */
+  .two_hundred {
+    height: 200px;
+    width: auto;
+  }
 
-    /* Images */
-    .two_hundred {
-        height: 200px;
-        width: auto;
-    }
+  .three_hundred {
+    height: 300px;
+    width: auto;
+  }
 
-    .three_hundred {
-        height: 300px;
-        width: auto;
-    }
+  .tall_img {
+    width: 200px;
+    height: auto;
+  }
 
-    .tall_img {
-        width: 200px;
-        height: auto;
-    }
+  .percent {
+    width: 90%;
+    height: auto;
+  }
 
-    .percent {
-        width: 90%;
-        height: auto;
-    }
+  /* Video */
+  video {
+    /* width="800" height="500" */
+    max-width: 60%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+    /* Resource just for future uses of video: https://www.w3schools.com/tags/tag_video.asp */
+  }
 
-    /* Video */
-    video {
-        /* width="800" height="500" */
-        max-width: 60%;
-        height: auto;
-        height: var(calc(5 / 8 * 100%));
-        margin-bottom: 5%;
-        /* Resource just for future uses of video: https://www.w3schools.com/tags/tag_video.asp */
-    }
+  /* Widths */
+  .width_30 {
+    width: 30%;
+  }
 
-    /* Widths */
-    .width_30 {
-        width: 30%;
-    }
+  .width_40 {
+    width: 40%;
+  }
 
-    .width_40 {
-        width: 40%;
-    }
+  .width_50 {
+    width: 50%;
+  }
 
-    .width_50 {
-        width: 50%;
-    }
+  .width_60 {
+    width: 60%;
+  }
 
-    .width_60 {
-        width: 60%;
-    }
-
-    /* Flex */
-    .horizontal {
-        display: flex;
-        flex-direction: row;
-    }
+  /* Flex */
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-
 /* horizontal class is vertical when the screen is too small */
-@media screen and (max-width:899px) {
-    /* https://stackoverflow.com/questions/51741141/media-queries-with-edge-css-hack */
-    /* @supports (-ms-ime-align: auto)  */
+@media screen and (max-width: 899px) {
+  /* https://stackoverflow.com/questions/51741141/media-queries-with-edge-css-hack */
+  /* @supports (-ms-ime-align: auto)  */
 
-    /* Font font hard-set */
-    a,
-    p,
-    ul,
-    li,
-    text,
-    .nav {
-        /* font-size: 20pt; */
-        /* font-size: 1.3rem; */
-        font-size: 12pt;
-    }
+  /* Font font hard-set */
+  a,
+  p,
+  ul,
+  li,
+  text,
+  .nav {
+    /* font-size: 20pt; */
+    /* font-size: 1.3rem; */
+    font-size: 12pt;
+  }
 
-    figcaption {
-        font-size: 10pt;
-        /* font-size: 1.2rem; */
-    }
+  figcaption {
+    font-size: 10pt;
+    /* font-size: 1.2rem; */
+  }
 
-    /* Specific Text Edits */
-    h1 {
-        /* font-size: 32pt; */
-        /* font-size: 1.7rem; */
-        font-size: 18pt;
-        font-weight: bold;
-        padding-left: 5px;
-    }
+  /* Specific Text Edits */
+  h1 {
+    /* font-size: 32pt; */
+    /* font-size: 1.7rem; */
+    font-size: 18pt;
+    font-weight: bold;
+    padding-left: 5px;
+  }
 
-    h2 {
-        /* font-size: 28pt; */
-        /* font-size: 1.6rem; */
-        font-size: 18pt;
-    }
+  h2 {
+    /* font-size: 28pt; */
+    /* font-size: 1.6rem; */
+    font-size: 18pt;
+  }
 
-    h3 {
-        /* font-size: 24pt; */
-        /* font-size: 1.5rem; */
-        font-size: 16pt;
-        padding-left: 10px;
-    }
+  h3 {
+    /* font-size: 24pt; */
+    /* font-size: 1.5rem; */
+    font-size: 16pt;
+    padding-left: 10px;
+  }
 
-    h4 {
-        /* font-size: 22pt; */
-        /* font-size: 1.3rem; */
-        font-size: 16pt;
-        font-style: italic;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  h4 {
+    /* font-size: 22pt; */
+    /* font-size: 1.3rem; */
+    font-size: 16pt;
+    font-style: italic;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    /* Flex: Only columns in mobile view */
-    .horizontal {
-        display: flex;
-        flex-direction: column;
-    }
+  /* Flex: Only columns in mobile view */
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
 
-    video {
-        max-width: 90%;
-        height: auto;
-        height: var(calc(5 / 8 * 100%));
-        margin-bottom: 5%;
-    }
+  video {
+    max-width: 90%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+  }
 
-    /* image adjusting */
-    .two_hundred,
-    .three_hundred,
-    .tall_img,
-    .percent {
-        height: auto;
-        width: 90%;
-    }
+  /* image adjusting */
+  .two_hundred,
+  .three_hundred,
+  .tall_img,
+  .percent {
+    height: auto;
+    width: 90%;
+  }
 }
