@@ -68,8 +68,10 @@ h4 {
   border-width: 3px;
 }
 
-#nav h2 {
-  padding-left: 15%;
+@media (min-width: 1001px) {
+  #nav h2 {
+    padding-left: 15%;
+  }
 }
 
 #nav li {
@@ -222,7 +224,7 @@ img {
 /* Mobile */
 /* @media screen and (max-width: 1000px) { */
 @media (max-width: 1000px) {
-  h1 {
+  /* h1 {
     font-size: 1.9rem;
   }
 
@@ -245,7 +247,7 @@ img {
 
   figcaption {
     font-size: 1.1rem;
-  }
+  } */
 
   video {
     max-width: 90%;
