@@ -33,11 +33,11 @@ li,
 text,
 figcaption {
   color: gold;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 figcaption {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 p {
@@ -46,21 +46,21 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-style: italic;
   padding-left: 3%;
   padding-right: 3%;
@@ -72,10 +72,9 @@ h4 {
   border-width: 3px;
 }
 
-@media (min-width: 1001px) {
-  #nav h2 {
-    padding-left: 15%;
-  }
+/* @media (min-width: 1001px) { */
+#nav h2 {
+  padding-left: 15%;
 }
 
 #nav li {
@@ -256,6 +255,10 @@ img {
   figcaption {
     /* font-size: 1.1rem; */
     font-size: 0.8rem;
+  }
+
+  #nav h2 {
+    padding-left: 5%;
   }
 
   video {
