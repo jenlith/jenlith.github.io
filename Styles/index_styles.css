@@ -181,13 +181,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 
 #jira {
   /* max-width: 100%; */
-  width: 100%;
-  height: 70%;
+  /* width: 100%; */
+  /* height: 70%; */
+  width: 20px;
+  height: calc(20px * 0.7);
   background-color: lightblue;
   /* padding-left: 1%;
   margin-left: 30%;
@@ -204,7 +206,7 @@ img {
 
 #clock {
   /* max-width: 50%; */
-  width: 50%;
+  width: 100%;
   height: auto;
   /* margin-left: 30%;
    margin-top: 9%; */
@@ -215,7 +217,7 @@ img {
 
 #pen_and_paper {
   /* max-width: 50%; */
-  width: 50%;
+  width: 100%;
   height: auto;
   /* margin-left: 30%;
    margin-top: 9%; */
