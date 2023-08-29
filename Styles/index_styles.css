@@ -158,6 +158,7 @@ figure {
   border: 2px solid rgba(255, 215, 0, 0.3);
   padding: 5px;
   border-radius: 0.5rem;
+  width: 30%;
 }
 
 /* image adjusting */
@@ -177,7 +178,7 @@ img {
 
 .image_container {
   max-width: 95%;
-  /* min-width: 70%; */
+  min-width: 20%;
 }
 
 .image_container_small {
@@ -190,15 +191,15 @@ img {
   /* max-width: 100%; */
   /* width: 100%; */
   /* height: 70%; */
-  width: 150px;
+  width: 125px;
   /* height: calc(150px * 0.7); */
-  height: calc(150px * 0.25);
+  height: calc(125px * 0.25);
   background-color: lightblue;
   /* padding-left: 1%;
   margin-left: 30%;
   margin-top: 9%; */
   margin-top: 9%;
-  margin-bottom: calc(150px * 0.3);
+  margin-bottom: calc(125px * 0.3);
 }
 
 .myEclipse_container {
@@ -249,7 +250,8 @@ img {
 
 /* Mobile */
 /* @media screen and (max-width: 1000px) { */
-@media (max-width: 1000px) {
+@media screen and (max-width: 999px) {
+/* @media (max-width: 1000px) { */
   h1 {
     /* font-size: 1.9rem; */
     font-size: 1.2rem;
@@ -275,6 +277,10 @@ img {
     font-size: 0.9rem;
   }
 
+  figure {
+    width: 90%;
+  }
+
   figcaption {
     /* font-size: 1.1rem; */
     font-size: 0.8rem;
@@ -297,11 +303,6 @@ img {
     flex-direction: column;
   }
 
-  .image_container_small {
-    max-width: 15%;
-    min-width: 10%;
-  }
-
   /* #jira,
   #clock,
   .myEclipse,
@@ -310,6 +311,19 @@ img {
     margin-left: 30%;
     margin-top: 15%;
   } */
+
+  .image_container_small {
+    max-width: 20%;
+    min-width: 10%;
+  }
+
+  #jira {
+    width: 150px;
+    height: calc(150px * 0.25);
+    background-color: lightblue;
+    margin-top: 9%;
+    margin-bottom: calc(150px * 0.3);
+  }
 }
 
 /*background-color: darkcyan;*/
