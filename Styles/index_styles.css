@@ -72,7 +72,6 @@ h4 {
   border-width: 3px;
 }
 
-/* @media (min-width: 1001px) { */
 #nav h2 {
   padding-left: 15%;
 }
@@ -182,7 +181,8 @@ img {
 }
 
 .image_container_small {
-  max-width: 10%;
+  width: 10%;
+  /* max-width: 10%; */
   /* min-width: 10%; */
   margin: 1%;
 }
@@ -250,7 +250,7 @@ img {
 
 /* Mobile */
 /* @media screen and (max-width: 1000px) { */
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   /* @media (max-width: 1000px) { */
   h1 {
     /* font-size: 1.9rem; */
