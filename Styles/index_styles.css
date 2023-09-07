@@ -329,14 +329,18 @@ img {
     margin-top: 15%;
   } */
 
+  .image_container {
+    width: 80%;
+  }
+
   .image_container_small {
-    max-width: 20%;
-    min-width: 10%;
+    max-width: 40%;
+    min-width: 20%;
   }
 
   #jira {
     width: 150px;
-    height: calc(150px * 0.25);
+    height: calc(150px * 0.3);
     background-color: lightblue;
     margin-top: 5%;
     margin-bottom: calc(150px * 0.3);
