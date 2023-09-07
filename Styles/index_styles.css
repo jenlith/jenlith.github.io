@@ -139,6 +139,12 @@ hr {
   flex-direction: column;
 }
 
+/* Flex: Allow for horizontal sections */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Flex: Exception to mobile rule of everything vertical */
 .special_horizontal {
   display: flex;
