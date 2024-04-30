@@ -3,6 +3,8 @@
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 /* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
 
+/* TODO: Make sure I didn't break the other pages */
+
 html {
   font-size: 14pt;
 }
@@ -23,6 +25,10 @@ body {
 }
 
 /* Standard/Default Text Styling */
+figcaption {
+  font-size: 0.9rem;
+}
+
 h1,
 h2,
 h3,
@@ -30,14 +36,9 @@ a,
 p,
 ul,
 li,
-text,
-figcaption {
+text {
   color: gold;
   font-size: 1rem;
-}
-
-figcaption {
-  font-size: 0.9rem;
 }
 
 p {
@@ -66,18 +67,52 @@ h4 {
   padding-right: 3%;
 }
 
+/* Acknowledgements */
+#svg_repo_ack,
+#svg_repo_ack p,
+#svg_repo_ack a,
+.ack_sm,
+.ack_sm p,
+.ack_sm a {
+  font-size: 0.8rem;
+}
+
+/* Customise navigation */
+.nav {
+  display: block;
+  border: 3px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+  min-width: 25%;
+  padding: 1%;
+  margin: 1%;
+  padding-right: 5%;
+}
+
 #nav {
   display: block;
   border-color: goldenrod;
   border-width: 3px;
 }
 
+#nav_dev_reminders {
+  min-width: 30%;
+}
+
 #nav h2 {
   padding-left: 15%;
 }
 
+.nav h2 {
+  margin-top: 1%;
+}
+
 #nav li {
   list-style-type: none;
+}
+
+.nav li {
+  list-style-type: none;
+  padding-bottom: 1rem;
 }
 
 #intro {
@@ -170,6 +205,7 @@ figure {
 img {
   height: auto;
   width: 100%;
+  border-radius: 0.3rem;
 }
 
 #ncr_logo_container {
@@ -180,9 +216,18 @@ img {
   border-radius: 5%;
 }
 
+#camis_logo_container {
+  align-self: center;
+  border-radius: 0.5rem;
+  padding: 2%;
+  background-color: rgba(229, 255, 253, 1);
+}
+
 .image_container,
 .image_container_small,
-#jira_container {
+.image_container_medium,
+#jira_container,
+#image_container_pi {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,9 +239,19 @@ img {
   min-width: 30%;
 }
 
+.image_container_medium {
+  max-width: 40%;
+  min-width: 10%;
+  margin: 1%;
+}
+
 .image_container_small {
   width: 10%;
   margin: 1%;
+}
+
+#image_container_pi {
+  width: 35%;
 }
 
 #jira {
@@ -227,11 +282,39 @@ img {
   border-radius: 50%;
 }
 
-#pen_and_paper {
+/* TODO: fix pen_and_paper everywhere */
+/* #pen_and_paper {
   max-width: 50%;
   height: auto;
   background-color: lightblue;
   border-radius: 10%;
+} */
+
+#pen_and_paper,
+.pen_and_paper {
+  max-width: 80%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 10%;
+  padding: 5%;
+}
+
+#pen_and_paper_a {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pen_and_paper_a img {
+  max-width: 40%;
+}
+
+#checklist,
+.icon {
+  max-width: 50%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 10%;
+  padding: 1%;
 }
 
 .goal h4 {
@@ -240,6 +323,35 @@ img {
 
 .goal p {
   padding-left: 0;
+}
+
+/* Camis customisation */
+.camis_values figure {
+  border: 0px;
+  min-width: 10%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+.camis_values figcaption {
+  font-size: 1rem;
+  /* border: 2px solid rgba(255, 215, 0, 0.3); */
+  border: 2px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+.camis_border figure {
+  border: 2px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+}
+
+.camis_border {
+  color: rgba(150, 230, 220, 1);
 }
 
 /* Mobile */
@@ -273,8 +385,16 @@ img {
     font-size: 0.8rem;
   }
 
-  #nav h2 {
+  #nav h2,
+  .nav h2 {
     padding-left: 5%;
+  }
+
+  #svg_repo_ack p,
+  #svg_repo_ack a,
+  .ack_sm p,
+  .ack_sm a {
+    font-size: 0.7rem;
   }
 
   video {
@@ -290,8 +410,18 @@ img {
     flex-direction: column;
   }
 
+  .one_line {
+    align-items: start;
+  }
+
   .image_container {
     width: 80%;
+  }
+
+  .image_container_medium {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5%;
   }
 
   .image_container_small {
@@ -332,7 +462,37 @@ img {
     background-color: lightblue;
     border-radius: 10%;
   }
+
+  #pen_and_paper_b {
+    width: 60%;
+    height: auto;
+    padding: 2%;
+  }
+
+  /* Camis customisation */
+    .camis_values figure {
+    border: 0px;
+    min-width: 30%;
+    max-width: 50%;
+  }
+
+  .camis_values figcaption {
+    font-size: 0.9rem;
+  }
+
+  .camis_values .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /*background-color: rgb(4, 102, 102);*/
 /*background-color: rgb(32, 230, 230);*/
