@@ -88,11 +88,14 @@ h4 {
   padding-right: 5%;
 }
 
-#nav {
+.gold_border {
+  border-color: goldenrod;
+}
+/* #nav {
   display: block;
   border-color: goldenrod;
   border-width: 3px;
-}
+} */
 
 #nav_dev_reminders {
   min-width: 30%;
@@ -104,10 +107,6 @@ h4 {
 
 .nav h2 {
   margin-top: 1%;
-}
-
-#nav li {
-  list-style-type: none;
 }
 
 .nav li {
@@ -184,7 +183,6 @@ hr {
 .special_horizontal {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-evenly; */
 }
 
 .one_line {
@@ -470,7 +468,7 @@ img {
   }
 
   /* Camis customisation */
-    .camis_values figure {
+  .camis_values figure {
     border: 0px;
     min-width: 30%;
     max-width: 50%;
@@ -492,7 +490,6 @@ img {
     flex-direction: column;
   }
 }
-
 
 /*background-color: rgb(4, 102, 102);*/
 /*background-color: rgb(32, 230, 230);*/
