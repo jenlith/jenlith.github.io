@@ -89,7 +89,7 @@ h4 {
 }
 
 .gold_border {
-  border-color: goldenrod;
+  border-color: rgba(255, 215, 0, 0.3);
 }
 
 #nav_dev_reminders {
