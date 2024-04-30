@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Camis - Redux</title>
+  <meta lang="en" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Jennifer Lithgow">
+  <meta name="description" content="Redux blog post from my work term at Camis.">
+  <link rel="stylesheet" type="text/css" href="../index_styles.css" />
+  <!-- https://stackoverflow.com/questions/41886632/same-size-font-looks-like-a-different-size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="full_body">
+  <div id="path_container">
+    <a id="home_page" href="https://jenlith.github.io/">Home page</a>
+    >
+    <a id="prev_page" href="../CamisW24.html#goal2">Camis W24</a>
+    >
+    <strong>Redux</strong>
+  </div>
+  <br />
+
+  <div id="camis_logo_container">
+    <img alt="Camis logo" src="https://www.camis.com/themes/custom/camis_theme/assets/image/camis.png" />
+  </div>
+
+  <h1 id="title">Camis - Redux</h1>
+
+  <div class="horizontal">
+    <nav id="nav" class="nav">
+      <h2 class="horizontal center">Navigation</h2>
+      <ul>
+        <li> <a href="#types">Types</a> </li>
+        <li> <a href="#hooks_reducers_actions">Hooks, Reducers, Actions</a> </li>
+        <li> <a href="#components">Components</a> </li>
+      </ul>
+    </nav>
+
+    <div class="vertical" id="intro">
+      <p>
+        Since we <u>didn't use Redux Toolkit</u>, we had to go more in-depth with our code and make sure that, when
+        looking for resources, we weren't trying anything specific to Redux Toolkit. I went over parts 1-3 of <a
+          href="https://redux.js.org/tutorials/fundamentals/part-1-overview">Redux Fundamentals</a> as a way of
+        getting a better grasp on how exactly Redux works.
+      </p>
+    </div>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="types">
+    <h2>Types</h2>
+    <p>
+      Depending on what changes you want to make to the structure of the state, you may have to introduce a new type. I
+      wanted to create a dictionary, so I created the following interface:
+    </p>
+    <pre><code lang="TypeScript">    export interface customDictionary {
+      [key: number]: someData[];
+    }</code></pre>
+    <p>
+      This is a relatively simple structure. The key would be something unique, which would then hold a list of some
+      data specific to that key. I used a similar custom dictionary as a reference.
+    </p>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="hooks_reducers_actions">
+    <h2>Hooks, Reducers, Actions</h2>
+    <p>
+      React components would call hooks to interact with Redux. For my example, let's call the hook useSomeData.tsx. The
+      related .reducers.ts and .actions.ts files (someData) had to be modified alongside this. Or rather, when I changed
+      the reducers and actions, I had to update the hook.
+    </p>
+    <p>
+      I would say these changes are rather straightforward. It's not that implementing the changes is simple, but rather
+      that once you understand and know what you want to change, you should be able to do so successfully. Looking at
+      relevant (and similar work) helped me understand how everything works together.
+    </p>
+    <p>
+      Since I introduced a dictionary, I had to understand how to change a value within an array in Redux. Thankfully, I
+      had a pull request and a simpler example in Stack Overflow to reference (<a
+        href="https://stackoverflow.com/questions/35628774/how-to-update-single-value-inside-specific-array-item-in-redux"
+        target="_blank">How to update a single item inside a specific array in redux</a>).
+    </p>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="components">
+    <h2>Components</h2>
+    <p>
+      Now for the React components that call the hook you changed. For the most part, this is making any necessary
+      changes to eliminate errors you introduced. You may have to change variable types or parameters to methods, but
+      it's pretty logical.
+    </p>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <a href="https://camis.atlassian.net/wiki/spaces/~71202040121623bec54a57912c63e80f8129f4/blog/2024/03/15/291733812/Sidekick+Redux"
+    target="_blank">
+    Add more from this page
+  </a>
+
+</body>
+
+</html>

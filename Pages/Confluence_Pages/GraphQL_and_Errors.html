@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Camis - GraphQL and Errors</title>
+  <meta lang="en" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Jennifer Lithgow">
+  <meta name="description" content="GraphQL and Errors blog post from my work term at Camis.">
+  <link rel="stylesheet" type="text/css" href="../index_styles.css" />
+  <!-- https://stackoverflow.com/questions/41886632/same-size-font-looks-like-a-different-size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="full_body">
+  <div id="path_container">
+    <a id="home_page" href="https://jenlith.github.io/">Home page</a>
+    >
+    <a id="prev_page" href="../CamisW24.html#goal2">Camis W24</a>
+    >
+    <strong>GraphQL and Errors</strong>
+  </div>
+  <br />
+
+  <div id="camis_logo_container">
+    <img alt="Camis logo" src="https://www.camis.com/themes/custom/camis_theme/assets/image/camis.png" />
+  </div>
+
+  <h1 id="title">Camis - GraphQL and Errors</h1>
+
+  <div class="horizontal">
+    <nav id="nav" class="nav">
+      <h2 class="horizontal center">Navigation</h2>
+      <ul>
+        <li> <a href="#summary">Summary</a> </li>
+        <li> <a href="#learned">What I Learned</a> </li>
+        <li> <a href="#resources">Additional Resources</a> </li>
+      </ul>
+    </nav>
+
+    <div id="summary">
+      <h2>Summary</h2>
+      <ul>
+        <li>Working with GraphQL</li>
+        <li>The backend/server side uses Hot Chocolate</li>
+        <li>The frontend/client side uses Apollo</li>
+      </ul>
+    </div>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="learned">
+    <h2>What I learned</h2>
+    <p>
+      If there is a server-side error, there are two responses GraphQL can use: a 200 OK error, and a 500 server error.
+      200 OK errors provide partial data, while 500 errors do not.
+    </p>
+    <p>
+      An example of a 500 error:
+    </p>
+    <pre>
+      <code lang="JSON">
+    {
+      "errors": [
+        {
+          "message": "This is the error message."
+        }
+      ]
+    }
+      </code>
+    </pre>
+    <p>
+      An example of a 200 OK error:
+    </p>
+    <pre>
+      <code lang="JSON">
+    {
+      "errors": [
+        {
+          "message": "This is the error message.",
+          "locations": [
+            {
+              "line": 3,
+              "column": 5
+            }
+          ],
+          "path": [
+            "whereTheErrorOccurred"
+          ]
+        }
+      ],
+      "data": {
+        "partialDataReturned": []
+      }
+    }
+      </code>
+    </pre>
+    <p>
+      Note how the information is more complex in a 200 OK error. Since the type of error I had was simple and I didn't
+      want to return any partial data to the user, the 500 error made more sense in this case.
+    </p>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="resources">
+    <h2>Additional Resources</h2>
+    <ul>
+      <li>
+        <a href="https://htomar.dev/posts/error-handling-in-graphql-with-hot-chocolate#200-ok-errors"
+          target="_blank">Error Handling in GraphQL With Hot Chocolate</a>
+        <ul>
+          <li>A useful resource that explains why GraphQL provides only specific types of responses</li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=Zx0nvTUfjn4" target="_blank">GraphQL Non-Nullability and Error Handling
+          (YouTube)</a>
+        <ul>
+          <li>Demonstrates the usefulness of partial data and declaring non-nullable fields</li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=R0A2TE0bMes" target="_blank">GraphQL Error Handling is Painful
+          (YouTube)</a>:
+        <ul>
+          <li>
+            Explains why GraphQL can be a challenge when it comes to errors
+          </li>
+          <li>
+            Provides a few solutions to the types of error responses GraphQL provides
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

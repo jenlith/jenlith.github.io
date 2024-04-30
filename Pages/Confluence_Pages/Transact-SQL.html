@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Camis - Transact-SQL</title>
+  <meta lang="en" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Jennifer Lithgow">
+  <meta name="description" content="Information about Transact-SQL I learned during my work term at Camis.">
+  <link rel="stylesheet" type="text/css" href="../index_styles.css" />
+  <!-- https://stackoverflow.com/questions/41886632/same-size-font-looks-like-a-different-size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="full_body">
+  <div id="path_container">
+    <a id="home_page" href="https://jenlith.github.io/">Home page</a>
+    >
+    <a id="prev_page" href="../CamisW24.html#goal2">Camis W24</a>
+    >
+    <strong>Transact-SQL</strong>
+  </div>
+  <br />
+
+  <div id="camis_logo_container">
+    <img alt="Camis logo" src="https://www.camis.com/themes/custom/camis_theme/assets/image/camis.png" />
+  </div>
+
+  <h1 id="title">Camis - Transact-SQL</h1>
+
+  <div class="horizontal">
+    <nav id="nav_dev_reminders" class="nav">
+      <h2 class="horizontal center">Navigation</h2>
+      <ul>
+        <li> <a href="#definitions">Definitions</a> </li>
+        <li> <a href="#other_info">Other Information</a> </li>
+      </ul>
+    </nav>
+
+    <div id="intro" class="vertical">
+      <h2>Introduction</h2>
+      <p>
+        Information about Transact-SQL I learned during my work term at Camis.
+      </p>
+    </div>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="definitions">
+    <h2>Definitions</h2>
+    <ul>
+      <li>
+        Stored procedures are a bit like methods. <a href="https://www.w3schools.com/SQL/sql_stored_procedures.asp"
+          target="_blank">Here's a brief description with examples from W3 Schools</a>.
+      </li>
+      <li>
+        <code>#</code> is used for temporary local tables. ## is used for global temporary tables. (<a
+          href="https://stackoverflow.com/questions/3166117/what-does-the-sql-symbol-mean-and-how-is-it-used"
+          target="_blank">Stack Overflow</a>)
+        <ul>
+          <li>
+            If you don't see your changes to a stored procedure, it's possible that it's only been passed into a
+            temporary table and not the final (returned) result.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <code>@</code> is used to indicate variables (including parameters).
+      </li>
+      <li>
+        <code>BEGIN...END</code> defines a block to contain statements that execute together. (<a
+          href="https://learn.microsoft.com/en-us/sql/t-sql/language-elements/begin-end-transact-sql?view=sql-server-ver16"
+          target="_blank">Microsoft Learn: BEGIN…END</a>)
+      </li>
+      <li>
+        <code>SET NOCOUNT</code> can be <code>OFF</code> (default) or <code>ON</code>. When on, it disables messages
+        sent to the client for every statement executed (for example, the “N rows affected” message). (<a
+          href="https://learn.microsoft.com/en-us/sql/t-sql/statements/set-nocount-transact-sql?view=sql-server-ver16"
+          target="_blank">Microsoft Learn: SET NOCOUNT</a>)
+      </li>
+      <li>
+        <code>SET TRANSACTION ISOLATION LEVEL</code>: setting the level determines what violations are allowed or not.
+        (<a
+          href="https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver16"
+          target="_blank"> Microsoft Learn: SET TRANSACTION ISOLATION LEVEL</a>)
+      </li>
+    </ul>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="other_info">
+    <h2>Other Information</h2>
+    <ul>
+      <li>
+        <a href="https://www.dataquest.io/blog/sql-vs-t-sql/" target="_blank">SQL vs Transact-SQL (Dataquest blog)</a>
+        <ul>
+          <li>
+            Transact-SQL is developed and owned by Microsoft (has all SQL features and some extra)
+          </li>
+        </ul>
+      </li>
+      <li>
+        ACID transactions: Atomicity, Consistency, Isolation, Durability
+        <ul>
+          <li>
+            Seems to be a set of principles for how transactions (should) behave
+          </li>
+          <li>
+            <a href="https://devopedia.org/acid-transactions" target="_blank">Devopedia explanation of ACID
+              Transactions</a>
+            <ul>
+              <li>
+                Atomicity: All-or-nothing changes. If there's a failure mid-transaction, everything is rolled back to
+                the state prior to the transaction start.
+              </li>
+              <li>
+                Consistency: Only valid data is saved (even if invalid mid-transaction).
+              </li>
+              <li>
+                Isolation: Transactions do not affect each other. The intermediate state of a transaction is not visible
+                to other transactions.
+              </li>
+              <li>
+                Durability: Written data won't be lost. When a transaction completes, the changes are stored in a
+                persistent manner (that power failure or other system errors won't affect).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</body>
+
+</html>

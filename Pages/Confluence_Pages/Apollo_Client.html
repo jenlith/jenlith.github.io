@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Camis - Apollo Client</title>
+  <meta lang="en" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Jennifer Lithgow">
+  <meta name="description" content="Apollo Client blog post from my work term at Camis.">
+  <link rel="stylesheet" type="text/css" href="../index_styles.css" />
+  <!-- https://stackoverflow.com/questions/41886632/same-size-font-looks-like-a-different-size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="full_body">
+  <div class="path_container">
+    <a id="home_page" href="https://jenlith.github.io/">Home page</a>
+    >
+    <a id="prev_page" href="../CamisW24.html#goal2">Camis W24</a>
+    >
+    <strong>Apollo Client</strong>
+  </div>
+  <br />
+
+  <div id="camis_logo_container">
+    <img alt="Camis logo" src="https://www.camis.com/themes/custom/camis_theme/assets/image/camis.png" />
+  </div>
+
+  <h1 id="title">Camis - Apollo Client</h1>
+
+  <div class="horizontal">
+    <nav id="nav" class="nav">
+      <h2 class="horizontal center">Navigation</h2>
+      <ul>
+        <li> <a href="#component">Component Page</a> </li>
+        <li> <a href="#query_handling">Handling the Query (Hook File)</a> </li>
+        <li> <a href="#query">The Query File</a> </li>
+      </ul>
+    </nav>
+
+    <div id="intro">
+      <p>
+        I spent some time learning client-side queries using Apollo Client in React. Since I didn't have a strong
+        understanding of Apollo and GraphQL, I had some trouble recognising and understanding how formatting worked in
+        TypeScript for Apollo and GraphQL. Here, I intend to highlight anything I considered important details to help
+        understand Apollo Client.
+      </p>
+      <p>
+        Note that this has been altered to remove private information.
+      </p>
+    </div>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="component">
+    <h2>Component Page</h2>
+    <p>
+      The declaration to retrieve data was somewhat difficult to understand at first:
+    </p>
+    <pre><code lang="TypeScript">    const {
+      data: { wantedData = [] } = {},
+    } = useWantedData();</code></pre>
+    <p>
+      It creates a constant, wantedData, from data returned by the useWantedData method. If
+      wantedData is null or nonexistent, it will instead return an empty array. If you don't want it to always
+      return an empty array (as in, you sometimes want to receive null), you can instead write:
+    </p>
+    <pre><code lang="TypeScript">    const {
+      data: { wantedData } = {},
+    } = useWantedData();</code></pre>
+    <p>
+      If useWantedData also returned another field, such as error, then that value can be included as follows:
+    </p>
+    <pre><code lang="TypeScript">    const {
+      data: { wantedData = [] } = {},
+      error,
+    } = useWantedData();</code></pre>
+    <p>
+      Though that requires a change to useWantedData's file, as shown in the next section.
+    </p>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="query_handling">
+    <h2>Handling the Query (Hook File)</h2>
+    <pre><code lang="TypeScript">    import { useQuery } from '@apollo/client';
+    import { GetWantedDataQuery } from '../data/queries/wantedData';
+    import { WantedData } from '../types/WantedData';
+
+    export const useWantedData = () => {
+      // This query will return a list
+      // When needed, we can import this hook into component
+      const queryResult = useQuery<{
+        wantedData: WantedData[]
+      }>(GetWantedDataQuery);
+      if (queryResult?.data?.wantedData) {
+        return {
+          ...queryResult,
+          data: {
+            ...queryResult.data,
+          },
+        };
+      }
+      return queryResult;
+    };</code></pre>
+    <p>
+      Any use of ... in a file copies everything from the original value adjacent to it, but alters any information as
+      specified (such as data).
+    </p>
+    <p>The section</p>
+    <pre><code lang="TypeScript">    <{ wantedData: WantedData[] }></code>    </pre>
+    <p>
+      “describes” the values (and their types) that are returned by useQuery (imported from Apollo Client).
+    </p>
+    <p>
+      To return more than one value, it would be written as follows:
+    </p>
+    <pre><code lang="TypeScript">    <{
+      wantedData: WantedData[],
+      error: ApolloError
+    }></code></pre>
+  </div>
+
+  <br />
+  <hr class="camis_border pill" />
+  <br />
+
+  <div id="query">
+    <h2>The Query File</h2>
+    <pre><code lang="TypeScript">    import gql from 'graphql-tag';
+
+    export const GetWantedDataQuery = gql`query GetWantedData {
+      wantedData {
+        id
+        name {
+          firstName
+          lastName
+        }
+      }
+    }`;</code></pre>
+    <p>
+      This is the file containing the GraphQL query to get the wanted data. It is a useful source to copy the query into
+      a sandbox.
+    </p>
+  </div>
+
+</body>
+
+</html>

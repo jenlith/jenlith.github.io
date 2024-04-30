@@ -1,0 +1,475 @@
+/* https://stackoverflow.com/questions/51741141/media-queries-with-edge-css-hack */
+/* @supports (-ms-ime-align: auto)  */
+/* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
+/* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
+
+html {
+  font-size: 14pt;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(5, 73, 73);
+  font-family: monospace;
+  line-height: 1.4;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Standard/Default Text Styling */
+figcaption {
+  font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+ul,
+li,
+text {
+  color: gold;
+  font-size: 1rem;
+}
+
+p {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#svg_repo_ack,
+#svg_repo_ack p,
+#svg_repo_ack a,
+.ack_sm,
+.ack_sm p,
+.ack_sm a {
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-style: italic;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.nav {
+  display: block;
+  border: 3px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+  min-width: 25%;
+  padding: 1%;
+  margin: 1%;
+  padding-right: 5%;
+}
+
+#nav_dev_reminders {
+  min-width: 30%;
+}
+
+/* TODO: Make sure I didn't break the other pages */
+.nav h2 {
+  margin-top: 1%;
+}
+
+.nav li {
+  list-style-type: none;
+  padding-bottom: 1rem;
+}
+
+#intro {
+  padding-left: 5%;
+}
+
+/* Link Colours */
+a:link {
+  color: aqua;
+}
+
+a:hover,
+a:visited:hover {
+  color: aliceblue;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: burlywood;
+}
+
+a:active {
+  color: bisque;
+}
+
+svg {
+  fill: aqua;
+  padding-left: 2px;
+}
+
+/* hr lines */
+hr {
+  border: 1;
+  margin: 1.35rem auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+
+.pill {
+  height: 0px;
+  border-radius: 2px;
+  color: gold;
+  border: 2px solid currentColor;
+  width: 80%;
+}
+
+/* Flex: Justify Contents */
+.center {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Flex: Allow for vertical sections */
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex: Allow for horizontal sections */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Flex: Exception to mobile rule of everything vertical */
+.special_horizontal {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.one_line {
+  align-items: center;
+}
+
+/* Figure/Image Styling */
+figure {
+  /* https://stackoverflow.com/questions/17079552/how-to-add-frame-border-around-new-figure-element-in-html5 */
+  /* faded gold border colour */
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  padding: 2px;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+/* image adjusting */
+img {
+  height: auto;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+#ncr_logo_container {
+  margin: 1%;
+}
+
+#ncr_logo_container img {
+  border-radius: 5%;
+}
+
+#camis_logo_container {
+  align-self: center;
+  border-radius: 0.5rem;
+  padding: 2%;
+  /* background-color: rgba(200, 255, 250, 0.9); */
+  background-color: rgba(229, 255, 253, 1);
+  /* background-color: rgba(238, 251, 250, 1); */
+}
+
+.image_container,
+.image_container_medium,
+.image_container_small,
+#jira_container,
+#image_container_pi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image_container {
+  max-width: 90%;
+  min-width: 30%;
+}
+
+.image_container_medium {
+  max-width: 40%;
+  min-width: 10%;
+  margin: 1%;
+}
+
+.image_container_small {
+  width: 10%;
+  margin: 1%;
+}
+
+#image_container_pi {
+  width: 35%;
+}
+
+#jira {
+  width: 100px;
+  height: calc(100px * 0.6);
+  background-color: lightblue;
+  margin-top: 1%;
+  margin-left: 2%;
+  border-radius: 5%;
+}
+
+.myEclipse_container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#myEclipse {
+  width: 50%;
+  height: auto;
+}
+
+#clock {
+  max-width: 50%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+
+#pen_and_paper, .pen_and_paper {
+  max-width: 80%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 10%;
+  padding: 5%;
+}
+
+#pen_and_paper_a {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pen_and_paper_a img {
+  max-width: 40%;
+}
+
+#checklist,
+.icon {
+  max-width: 50%;
+  height: auto;
+  background-color: lightblue;
+  border-radius: 10%;
+  padding: 1%;
+}
+
+.goal h4 {
+  min-width: 21%;
+}
+
+.goal p {
+  padding-left: 0;
+}
+
+.camis_values figure {
+  border: 0px;
+  min-width: 10%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+.camis_values figcaption {
+  font-size: 1rem;
+  /* border: 2px solid rgba(255, 215, 0, 0.3); */
+  border: 2px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+.camis_border figure {
+  border: 2px solid rgba(150, 230, 220, 0.5);
+  border-radius: 0.5rem;
+}
+
+.camis_border {
+  color: rgba(150, 230, 220, 1);
+}
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1rem;
+  }
+
+  figure {
+    width: 90%;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+  }
+
+  a,
+  p,
+  ul,
+  li,
+  text {
+    font-size: 0.9rem;
+  }
+
+  #svg_repo_ack p,
+  #svg_repo_ack a,
+  .ack_sm p,
+  .ack_sm a {
+    font-size: 0.7rem;
+  }
+
+  .nav h2 {
+    padding-left: 5%;
+  }
+
+  video {
+    max-width: 90%;
+    height: auto;
+    height: var(calc(5 / 8 * 100%));
+    margin-bottom: 5%;
+  }
+
+  /* Flex: Default: Only columns in mobile view */
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one_line {
+    align-items: start;
+  }
+
+  .image_container {
+    width: 80%;
+  }
+
+  .image_container_small {
+    max-width: 40%;
+    min-width: 20%;
+  }
+
+  #jira {
+    width: 150px;
+    height: calc(150px * 0.3);
+    background-color: lightblue;
+    margin-top: 5%;
+    margin-bottom: calc(150px * 0.3);
+  }
+
+  .myEclipse_container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #myEclipse {
+    width: 90%;
+    height: auto;
+  }
+
+  #clock {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+    border-radius: 50%;
+  }
+
+  .image_container_medium {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5%;
+  }
+
+  #pen_and_paper {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+    border-radius: 10%;
+  }
+
+  #pen_and_paper_b {
+    width: 60%;
+    height: auto;
+    padding: 2%;
+  }
+
+
+  .camis_values figure {
+    border: 0px;
+    min-width: 30%;
+    max-width: 50%;
+  }
+
+  .camis_values figcaption {
+    font-size: 0.9rem;
+  }
+
+  .camis_values .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*background-color: rgb(4, 102, 102);*/
+/*background-color: rgb(32, 230, 230);*/
+/*background-color: rgb(231, 85, 163);*/
+
+/*color: rgb(247, 134, 247); lighter*/
+/*color: rgb(194, 97, 194);*/
