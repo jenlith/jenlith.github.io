@@ -3,8 +3,6 @@
 /* https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
 /* https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
 
-/* TODO: Make sure I didn't break the other pages */
-
 html {
   font-size: 14pt;
 }
@@ -327,7 +325,6 @@ img {
 
 .camis_values figcaption {
   font-size: 1rem;
-  /* border: 2px solid rgba(255, 215, 0, 0.3); */
   border: 2px solid rgba(150, 230, 220, 0.5);
   border-radius: 0.5rem;
   padding: 5px;
@@ -384,13 +381,13 @@ img {
   } */
 
   /* Acknowledgements */
-  #svg_repo_ack,
+  /* #svg_repo_ack,
   #svg_repo_ack p,
   #svg_repo_ack a,
   .ack_sm p,
   .ack_sm a {
     font-size: 0.9rem;
-  }
+  } */
 
   video {
     max-width: 90%;
@@ -410,10 +407,6 @@ img {
   }
 
   .image_container {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
   }
 
