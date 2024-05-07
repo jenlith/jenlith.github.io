@@ -381,13 +381,13 @@ img {
   } */
 
   /* Acknowledgements */
-  /* #svg_repo_ack,
+  #svg_repo_ack,
   #svg_repo_ack p,
   #svg_repo_ack a,
   .ack_sm p,
   .ack_sm a {
     font-size: 0.9rem;
-  } */
+  }
 
   video {
     max-width: 90%;
@@ -407,6 +407,7 @@ img {
   }
 
   .image_container {
+    max-width: 100%;
     align-items: center;
   }
 
