@@ -384,6 +384,7 @@ img {
   #svg_repo_ack,
   #svg_repo_ack p,
   #svg_repo_ack a,
+  .ack_sm,
   .ack_sm p,
   .ack_sm a {
     font-size: 0.9rem;
