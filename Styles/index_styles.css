@@ -367,7 +367,6 @@ img {
 
   figure {
     width: 90%;
-    align-self: center;
   }
 
   figcaption {
@@ -385,7 +384,7 @@ img {
   #svg_repo_ack a,
   .ack_sm p,
   .ack_sm a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   video {
@@ -407,6 +406,7 @@ img {
 
   .image_container {
     width: 80%;
+    justify-content: space-around;
   }
 
   .image_container_medium {
