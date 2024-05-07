@@ -94,6 +94,7 @@ h4 {
 
 #navbar {
   border: none;
+  padding-bottom: 1.3rem;
 }
 
 #nav_dev_reminders {
@@ -378,18 +379,18 @@ img {
     padding-left: 5%;
   }
 
-  #navbar li {
+  /* #navbar li {
     padding-bottom: 1.3rem;
-  }
+  } */
 
   /* Acknowledgements */
-  /* #svg_repo_ack,
+  #svg_repo_ack,
   #svg_repo_ack p,
   #svg_repo_ack a,
   .ack_sm p,
   .ack_sm a {
-    font-size: 1rem;
-  } */
+    font-size: 0.9rem;
+  }
 
   video {
     max-width: 90%;
@@ -410,7 +411,9 @@ img {
 
   .image_container {
     width: 80%;
-    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 
