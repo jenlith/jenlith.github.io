@@ -295,6 +295,12 @@ img {
   max-width: 40%;
 }
 
+#pen_and_paper_c {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #pen_and_paper_c img {
   max-width: 20%;
 }
