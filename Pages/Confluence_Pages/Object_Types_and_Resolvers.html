@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Object Types and Resolvers</title>
+  <meta lang="en" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Jennifer Lithgow">
+  <meta name="description" content="An explanation of object types and resolvers, based on my experience at Camis.">
+  <link rel="stylesheet" type="text/css" href="/Styles/index_styles.css" />
+  <!-- https://stackoverflow.com/questions/41886632/same-size-font-looks-like-a-different-size -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="full_body">
+  <div class="path_container">
+    <a id="home_page" href="https://jenlith.github.io/">Home</a>
+    >
+    <a id="home_page" href="https://jenlith.github.io/Pages/CamisS24">Camis S24</a>
+    >
+    <strong>Object Types and Resolvers</strong>
+  </div>
+  <br />
+
+  <h1 id="title">Object Types and Resolvers (Backend)</h1>
+  <p>
+    This document is more or less my current understanding of object types and resolvers in the Hot Chocolate GraphQL
+    backend, which can hopefully be used as a reference.
+  </p>
+  <p>
+    To create an object that can be included in GraphQL responses, there are a few steps involved:
+  </p>
+  <ol>
+    <li>Create a “GraphQL version” of the object (optional but recommended)</li>
+    <li>Create an Object Type of the object</li>
+    <li>Include Object Type in 'AddCustomGQL'</li>
+  </ol>
+  <p>
+    While this document might cover most of what's necessary, other sources of the relevant information are:
+  </p>
+  <ul>
+    <li>
+      <a href="https://chillicream.com/docs/hotchocolate/v13/defining-a-schema/object-types">Object Types - Hot
+        Chocolate - Chillicream GraphQL Platform</a>
+    </li>
+    <li>
+      <a href="https://chillicream.com/docs/hotchocolate/v13/fetching-data/resolvers">Resolvers - Hot Chocolate -
+        Chillicream GraphQL Platform</a> - recommended read, as I don't go in-depth here (it might be a bit more
+      learn-by-example).
+    </li>
+  </ul>
+  <p>
+    Once the object is created/defined, it can be used in the backend as desired. (Note that you use the object, not the
+    object type.)
+  </p>
+
+  <h2>Create a “GraphQL version” of the Object</h2>
+  <p>
+    Technically, this is optional. You can use the “original” object (the one used elsewhere in the backend), but there
+    are some reasons to create a dedicated object:
+  </p>
+  <ul>
+    <li>
+      It allows for customization that is different from the original object.
+      <ul>
+        <li>
+          For example, you may want a customer name and not just the customer ID, which is the only value on the
+          original object.
+        </li>
+      </ul>
+    </li>
+    <li>
+      It provides a simpler/more direct “interface” to use when working on the backend.
+    </li>
+  </ul>
+  <p>
+    (Note: Some objects may not have a “GraphQL version,” but will have a Type.)
+  </p>
+
+  <h2>Create an Object Type</h2>
+  <ul>
+    <li>
+      Controls what GraphQL requires/has access to by using the descriptor <code>.BindFieldsExplicitly()</code>
+    </li>
+    <li>
+      Allows for specifying how to “resolve” fields (using resolvers)
+    </li>
+  </ul>
+  <p>
+    In some cases, there can be several unused fields that don't need to be “resolved.” In fact, some fields cannot be
+    automatically “resolved” and therefore will create errors if they aren't defined. Fields are explicitly bound here,
+    and any resolvers can be added as necessary.
+  </p>
+  <p>
+    The link at the top about resolvers goes more in depth on how they look/work.
+  </p>
+
+  <h2>Include Object Type in AddCustomGQL</h2>
+  <p>
+    This one is pretty simple/straightforward. Add the code <code>.AddType&ltObjectType&gt()</code> where all the other
+    such statements are included. This provides Hot Chocolate/GraphQL with any necessary information about the object.
+  </p>
+</body>
