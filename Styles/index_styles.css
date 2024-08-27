@@ -295,6 +295,10 @@ img {
   max-width: 40%;
 }
 
+#pen_and_paper_c img {
+  max-width: 20%;
+}
+
 #checklist,
 .icon {
   max-width: 50%;
